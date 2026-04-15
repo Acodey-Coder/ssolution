@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="public/logo.png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed-dim": "#b9c8db",
+            "secondary": "#545f73",
+            "on-secondary-container": "#586377",
+            "inverse-surface": "#27313e",
+            "on-tertiary-fixed": "#0e1d2b",
+            "surface-bright": "#f8f9ff",
+            "outline": "#727780",
+            "on-surface-variant": "#41474f",
+            "on-primary-fixed-variant": "#004a79",
+            "surface-container-highest": "#d9e3f4",
+            "on-secondary-fixed": "#111c2d",
+            "secondary-container": "#d5e0f8",
+            "primary-fixed": "#d0e4ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#52718a",
+            "on-background": "#121c28",
+            "on-secondary-fixed-variant": "#3c475a",
+            "secondary-fixed-dim": "#bcc7de",
+            "primary-container": "#4a5a6a",
+            "on-tertiary-fixed-variant": "#3a4858",
+            "primary-fixed-dim": "#9acbff",
+            "on-primary": "#ffffff",
+            "inverse-primary": "#9acbff",
+            "surface-dim": "#d1dbec",
+            "on-surface": "#121c28",
+            "on-primary-fixed": "#001d34",
+            "tertiary": "#3c4a5b",
+            "surface-variant": "#d9e3f4",
+            "surface-container-low": "#f1f4f9",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#d5e4f8",
+            "tertiary-container": "#546273",
+            "surface": "#f8faff",
+            "primary": "#52718a",
+            "outline-variant": "#c1c7d0",
+            "on-error": "#ffffff",
+            "secondary-fixed": "#d8e3fb",
+            "on-tertiary-container": "#cfdef2",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#eaf1ff",
+            "on-primary-container": "#c4dfff",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#dfe9fa",
+            "surface-container": "#e5eeff",
+            "background": "#f8faff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .editorial-gradient {
+      background: linear-gradient(135deg, #52718a 0%, #4a5a6a 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-background font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm dark:shadow-none">
+    <div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+      <div class="flex items-center gap-3">
+        <img alt="Smart Solutions Logo" class="h-10 w-auto"
+          src="https://lh3.googleusercontent.com/aida/ADBb0ugWutkIXVt7W0iXGUtZqGzMTdgXNnmKdIuOFTkjwfXa-wo0tugUI2CNCFc2kbRCFPcuXX0fkSjGXHWNraM754ecR1Sa18Pm-GEUuE172CpZ-1fFHufezMgjyNZaIUlVn-hnAd2H_rWEHV76GfiZ4OOfcP1fWvXl0Qm3IB9PbCnxULx5UT-eI9ocMO804ZfT0UAJFu40ZJh2ShDOk6vJ-tbqX14BqCcTB9Gwa1LJTyZVax5v7LSNXMw91sb8y_9hUOjHFyaThPo--Uk" />
+        <span class="text-2xl font-bold tracking-tighter text-slate-700 dark:text-blue-50 font-headline">Smart
+          Solutions</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="font-headline tracking-tight text-sm font-semibold text-slate-800 dark:text-blue-400 border-b-2 border-slate-800 dark:border-blue-400 pb-1"
+          href="#">Home</a>
+        <a class="font-headline tracking-tight text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out"
+          href="#">Services</a>
+        <a class="font-headline tracking-tight text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out"
+          href="#">About Us</a>
+        <a class="font-headline tracking-tight text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out"
+          href="#">Contact</a>
+      </div>
+      <button
+        class="editorial-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-tight shadow-md transition-transform active:scale-95">
+        Get Started
+      </button>
+    </div>
+  </nav>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[850px] flex items-center overflow-hidden bg-surface">
+      <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 z-10">
+          <span
+            class="inline-block bg-secondary-container text-on-secondary-fixed-variant px-4 py-1 rounded-full text-[10px] font-bold tracking-[0.05em] uppercase mb-6 font-label">
+            Innovation &amp; Technology
+          </span>
+          <h1
+            class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
+            Empowering Businesses with <span class="text-primary italic">AI, Web, Mobile</span> &amp; E-commerce
+            Solutions
+          </h1>
+          <p class="text-secondary text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+            Smart Solutions helps organizations transform ideas into scalable, high-performance digital products that
+            drive growth and efficiency.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight shadow-lg hover:shadow-xl transition-all">
+              Initiate Project
+            </button>
+            <button
+              class="border border-outline-variant/40 text-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight hover:bg-surface-container-low transition-all">
+              View Portfolio
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative h-full min-h-[400px]">
+          <div class="absolute inset-0 bg-surface-container-high rounded-3xl overflow-hidden shadow-2xl">
+            <img alt="intelligent technology visualization" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBSdzkBD_npJd7XZlnZd7uQ1nuLOHmyEW7sgqvTqmQcma4wFYF73YFwjLdF7TI6PUMPHqTJ-puJ7egEnZUrjwGhBwTBqTbPkcBlda8uBBZtgWnJldEfFNjTD0iNynP4YnyH9C9DzsPPW_LNHkXa-O-_KHQkDovqpinwT0pQ5-Ra_rs1Kmd8mDAbGE-oQ8LDyWYuDV8tsEk0aSlYKb8DmGeK0e4_O0VgvpYXsXJVDSk6rVvgDXSn6376Y7ZHjzosk2Iag_MVRUF5Lf5" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-600/20 to-transparent"></div>
+          </div>
+          <!-- Floating Data Card -->
+          <div
+            class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-[0_20px_40px_rgba(18,28,40,0.06)] border border-outline-variant/10 max-w-[240px]">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="material-symbols-outlined text-primary"
+                style="font-variation-settings: 'FILL' 1;">bolt</span>
+              <span class="text-[10px] font-bold font-label uppercase tracking-wider text-secondary">Efficiency
+                Boost</span>
+            </div>
+            <div class="text-2xl font-bold font-headline text-on-surface">99.9%</div>
+            <div class="text-[11px] text-on-surface-variant font-body">System reliability for mission-critical digital
+              infrastructure.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Core Services -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="mb-16 text-center max-w-2xl mx-auto">
+          <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-4">Core Services</h2>
+          <p class="text-secondary font-body">End-to-end digital and AI-driven solutions tailored for modern business
+            needs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Service 1: IT Consulting -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6 block"
+              style="font-variation-settings: 'FILL' 0;">query_stats</span>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-4">IT Consulting</h3>
+            <p class="text-secondary text-sm mb-6">Expert consulting to optimize technology strategy, infrastructure,
+              and digital transformation roadmaps.</p>
+            <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="#">Learn More <span
+                class="material-symbols-outlined text-xs">arrow_forward</span></a>
+          </div>
+          <!-- Service 2: AI Solutions -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6 block">psychology</span>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-4">AI Solutions</h3>
+            <p class="text-secondary text-sm mb-6">Intelligent automation, AI-powered analytics, and decision
+              intelligence systems for forward-thinking enterprises.</p>
+            <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="#">Learn More <span
+                class="material-symbols-outlined text-xs">arrow_forward</span></a>
+          </div>
+          <!-- Service 3: Web Development -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6 block">code</span>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-4">Web Development</h3>
+            <p class="text-secondary text-sm mb-6">Custom SaaS platforms, corporate websites, and admin dashboards built
+              with modern, scalable architectures.</p>
+            <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="#">Learn More <span
+                class="material-symbols-outlined text-xs">arrow_forward</span></a>
+          </div>
+          <!-- Service 4: Mobile App Development -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6 block">smartphone</span>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-4">Mobile Apps</h3>
+            <p class="text-secondary text-sm mb-6">iOS, Android, and cross-platform applications designed for seamless
+              user experiences.</p>
+            <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="#">Learn More <span
+                class="material-symbols-outlined text-xs">arrow_forward</span></a>
+          </div>
+          <!-- Service 5: E-commerce Solutions -->
+          <div
+            class="md:col-span-2 bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 group border border-outline-variant/10">
+            <div class="flex flex-col md:flex-row gap-10 items-center h-full">
+              <div class="flex-1">
+                <span class="material-symbols-outlined text-4xl text-primary mb-6 block">shopping_bag</span>
+                <h3 class="font-headline text-2xl font-bold text-on-surface mb-4">E-commerce Solutions</h3>
+                <p class="text-secondary mb-6">Scalable commerce architecture including online stores, product catalogs,
+                  and order management platforms.</p>
+                <button
+                  class="text-primary font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1">View
+                  Case Studies</button>
+              </div>
+              <div class="w-full md:w-1/2 h-full rounded-lg overflow-hidden bg-slate-100">
+                <img alt="e-commerce interface" class="w-full h-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXoT0gCW-es8aWu1PZxX3jflKQ4MvUI0GXTMrG7isTvTWIlWVb2_kRelqZN_mp-sWKRoB6fKUJ_KcqYHTocpGBeV9554RgHFTrmKYAgWwPrBGowX6Layxe52TzownyQnYQNX81ZSXLedb7PM8sP3hF3_wKko5j16xr46BkJWEtn0A_b9lK1svpWtmXNMd-TdRpU1XM5ezGDCBUCyrKpO-1VTCOjGIl3ddMcjC0my3hcZPUQzayTGgwDuPOYAJmKAn3A92FMQaTzlep" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-surface overflow-hidden">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="relative">
+            <div class="w-full aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden shadow-xl">
+              <img alt="Smart Solutions team collaborating" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0fcSfcdSpxJHnWW2D4qsZyfjAmZUUuh_QXb1ujYjgwTKMM20ncOVtf5RWwCArxn5c0sE62uEP8-dojccVDzj3R9HCx3KslEonMJy4bQY3nqy9YFRWys2JGhNK0ZbORTp45jaKzNlW0FUg49i6Qop_Kq8kghg9_6D2061NnkUYP_E7OCKKjwDFpXp5mt71rVJqzdDm3BusM7saCqI3xqjS6eT0NKmd8tMrGO59zjIwWILlG6RWDDQtCO1Mk7CnLSIT15b0BctP7G16" />
+            </div>
+            <div class="absolute -right-12 top-1/4 bg-primary p-8 rounded-2xl hidden md:block max-w-[280px] shadow-2xl">
+              <h4 class="text-on-primary font-headline text-3xl font-bold mb-2">Success</h4>
+              <p class="text-primary-fixed-dim text-sm font-body">Empowering startups and enterprises with future-ready
+                solutions.</p>
+            </div>
+          </div>
+          <div>
+            <span class="text-primary font-bold font-label uppercase tracking-widest text-[10px] mb-4 block">The
+              Advantage</span>
+            <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-8 leading-tight">Why Industry
+              Leaders Choose Smart Solutions</h2>
+            <div class="space-y-10">
+              <div class="flex gap-6">
+                <div
+                  class="bg-primary-fixed text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handshake</span>
+                </div>
+                <div>
+                  <h4 class="font-headline text-lg font-bold text-on-surface mb-2">End-to-End Expertise</h4>
+                  <p class="text-secondary text-sm leading-relaxed">From initial strategic consulting to deployment and
+                    long-term support, we cover the full digital lifecycle.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="bg-primary-fixed text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                </div>
+                <div>
+                  <h4 class="font-headline text-lg font-bold text-on-surface mb-2">AI-First Innovation</h4>
+                  <p class="text-secondary text-sm leading-relaxed">We leverage advanced AI capabilities to deliver
+                    real-time, multilingual, and context-rich intelligence for your business.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="bg-primary-fixed text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">layers</span>
+                </div>
+                <div>
+                  <h4 class="font-headline text-lg font-bold text-on-surface mb-2">Scalable Architecture</h4>
+                  <p class="text-secondary text-sm leading-relaxed">Our systems are built for internet-scale, ensuring
+                    your platform grows seamlessly as your business expands.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mission & Vision -->
+    <section class="py-24 bg-surface-container-low border-y border-outline-variant/10">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="bg-white p-12 rounded-3xl shadow-sm">
+            <h3 class="font-headline text-2xl font-bold text-primary mb-6">Our Mission</h3>
+            <p class="text-secondary text-lg leading-relaxed">To empower businesses with intelligent, scalable, and
+              future-ready digital solutions through AI, software engineering, and strategic technology consulting.</p>
+          </div>
+          <div class="bg-white p-12 rounded-3xl shadow-sm">
+            <h3 class="font-headline text-2xl font-bold text-primary mb-6">Our Vision</h3>
+            <p class="text-secondary text-lg leading-relaxed">To become a leading technology partner and infrastructure
+              provider for businesses operating in the digital and AI-driven economy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-8">
+        <div
+          class="editorial-gradient rounded-[2rem] p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+          <div class="z-10 text-center md:text-left max-w-xl">
+            <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-on-primary tracking-tighter mb-6">Ready to
+              transform your business?</h2>
+            <p class="text-primary-fixed-dim text-lg mb-0 font-body">Get an expert consultation and roadmap for your
+              next digital or AI project.</p>
+          </div>
+          <div class="z-10 flex flex-col items-center gap-4">
+            <button
+              class="bg-surface-container-lowest text-primary px-10 py-5 rounded-full font-headline font-extrabold text-lg tracking-tight hover:shadow-2xl transition-all hover:-translate-y-1">
+              Get a Quote
+            </button>
+            <p class="text-on-primary/60 text-xs font-label uppercase tracking-widest">Rapid Response: Within 4 hours
+            </p>
+          </div>
+          <!-- Decorative Element -->
+          <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+            <span class="material-symbols-outlined text-[300px] absolute -right-20 -top-20"
+              style="font-variation-settings: 'wght' 100;">settings_suggest</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-slate-50 dark:bg-slate-900 w-full py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2 mb-6">
+          <img alt="Smart Solutions" class="h-6 w-auto"
+            src="https://lh3.googleusercontent.com/aida/ADBb0ugWutkIXVt7W0iXGUtZqGzMTdgXNnmKdIuOFTkjwfXa-wo0tugUI2CNCFc2kbRCFPcuXX0fkSjGXHWNraM754ecR1Sa18Pm-GEUuE172CpZ-1fFHufezMgjyNZaIUlVn-hnAd2H_rWEHV76GfiZ4OOfcP1fWvXl0Qm3IB9PbCnxULx5UT-eI9ocMO804ZfT0UAJFu40ZJh2ShDOk6vJ-tbqX14BqCcTB9Gwa1LJTyZVax5v7LSNXMw91sb8y_9hUOjHFyaThPo--Uk" />
+          <span class="text-xl font-bold text-slate-800 dark:text-blue-50 font-headline">Smart Solutions</span>
+        </div>
+        <!-- <p class="font-inter text-sm text-slate-500 dark:text-slate-400 mb-6">Empowering businesses with AI, Web, Mobile &amp; E-commerce solutions for a digital future.</p> -->
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-slate-900 dark:text-blue-400 font-medium font-inter text-sm uppercase tracking-widest">Services
+        </h4>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="#">IT Consulting</a>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="#">AI Solutions</a>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="#">Web &amp; Mobile Apps</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-slate-900 dark:text-blue-400 font-medium font-inter text-sm uppercase tracking-widest">Company
+        </h4>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="#">About Us</a>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="#">Our Vision</a>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="#">Privacy Policy</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-slate-900 dark:text-blue-400 font-medium font-inter text-sm uppercase tracking-widest">Contact
+        </h4>
+        <div class="font-inter text-sm text-slate-500 dark:text-slate-400">100 Digital Plaza, Suite 400<br />San
+          Francisco, CA 94105</div>
+        <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
+          href="mailto:contact@smartsolutions.com">contact@smartsolutions.com</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200/50 dark:border-slate-800/50">
+      <p class="font-inter text-xs text-slate-400 text-center">© 2024 Smart Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

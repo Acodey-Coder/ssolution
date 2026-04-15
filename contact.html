@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact Us | Smart Solutions</title>
+  <link rel="icon" type="image/png" href="public/logo.png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error": "#ba1a1a",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#d5e4f8",
+            "tertiary-container": "#546273",
+            "on-error": "#ffffff",
+            "surface-dim": "#d1dbec",
+            "surface-container-highest": "#d9e3f4",
+            "on-surface-variant": "#41474f",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "tertiary": "#3c4a5b",
+            "surface-bright": "#f8f9ff",
+            "on-primary-container": "#c4dfff",
+            "on-tertiary-fixed-variant": "#3a4858",
+            "on-secondary-fixed-variant": "#3c475a",
+            "primary-fixed": "#d0e4ff",
+            "outline": "#727780",
+            "surface-tint": "#276294",
+            "secondary-fixed": "#d8e3fb",
+            "background": "#f8f9ff",
+            "surface-variant": "#d9e3f4",
+            "surface-container-low": "#eef4ff",
+            "secondary-container": "#d5e0f8",
+            "on-secondary-fixed": "#111c2d",
+            "on-primary-fixed-variant": "#004a79",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#e5eeff",
+            "secondary": "#545f73",
+            "primary-container": "#2a6496",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#dfe9fa",
+            "primary-fixed-dim": "#9acbff",
+            "inverse-on-surface": "#eaf1ff",
+            "inverse-surface": "#27313e",
+            "on-tertiary-container": "#cfdef2",
+            "surface": "#f8f9ff",
+            "on-tertiary-fixed": "#0e1d2b",
+            "secondary-fixed-dim": "#bcc7de",
+            "on-background": "#121c28",
+            "tertiary-fixed-dim": "#b9c8db",
+            "primary": "#004c7c",
+            "outline-variant": "#c1c7d0",
+            "on-secondary-container": "#586377",
+            "inverse-primary": "#9acbff",
+            "on-surface": "#121c28",
+            "on-primary-fixed": "#001d34",
+            "on-tertiary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    .tonal-shift {
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="flex items-center gap-3">
+        <img alt="Smart Solutions Logo" class="h-8 w-auto"
+          data-alt="minimalist geometric logo for a technology consultancy featuring sharp angles and a deep navy and sky blue color palette"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfGPknJnSIyMD2dakGDulMKEiPBsArPKYX0B4W_hJxrVtMjh1q0tK7PFsaY8ViqbBsFNnPU9j8Y62UnPc29pYVgrXRvo5b11pS7WIPkoZAZTtp7XY5mds4Df58wVVobwEzJdZG-ugo8-PCshcfLZefsNlwjo38AIjik971Np6T2DmLN46eltu9X3iVZRlupdfDSQXIxZRpwk638SUdSv6zvpL88j3FSuJ3fyV1GrBGQogKA0rY8ompDr5yfW4QDaq2lLH6o4035UV-" />
+        <span class="text-2xl font-bold tracking-tighter text-sky-900 dark:text-white font-headline">Smart
+          Solutions</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 font-headline tracking-tight font-semibold">
+        <a class="text-slate-500 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 transition-colors"
+          href="#">Home</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 transition-colors"
+          href="#">Services</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 transition-colors"
+          href="#">About</a>
+        <a class="text-sky-900 dark:text-white border-b-2 border-sky-900 dark:border-sky-400 pb-1" href="#">Contact</a>
+      </div>
+      <button
+        class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-all duration-300">
+        Get Started
+      </button>
+    </div>
+  </nav>
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="relative bg-surface py-20 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="w-full md:w-3/5">
+            <span
+              class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Contact
+              Us</span>
+            <h1
+              class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-tight tracking-tight mb-8">
+              Let's build the next standard of <span class="text-primary italic">digital architecture.</span>
+            </h1>
+            <p class="text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed">
+              Connect with our curators to discuss high-level engineering, strategic transformation, and the
+              architectural intelligence of your next enterprise venture.
+            </p>
+          </div>
+          <div
+            class="w-full md:w-2/5 aspect-square bg-surface-container-low rounded-xl overflow-hidden relative shadow-xl">
+            <img alt="Modern lab/office setting"
+              class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
+              data-alt="sophisticated minimalist research lab and office with floor-to-ceiling windows, sleek modern furniture, and cold blue architectural lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi0vMZs5VYRulPZNI29z_n81GI5xzUFznYGY1_6sKqdUSAwYfgHamokKysYjuA8aVPiCrHDAZUXmTRs7bNHCEeAm_F7TjXOseaWdkcbQkyytGVuWJyXQ2oO5eJq0M15JXYJDica0RuNm0MA5PsAs81gvGFt8xfDEpv_PnVYkTm64aNlag1CmHqmGekX0-n7nFTpyVbcNRymaKHivRUu5IyVXQZPSIPqnos-Iv4N9Kb2l3LndB5qpIg3xcE-jG3ibRncsDYEegafGzs" />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative Element -->
+      <div class="absolute -right-20 -top-20 w-96 h-96 bg-primary-fixed-dim/20 rounded-full blur-3xl"></div>
+    </section>
+    <!-- Main Content: Form & Sidebar -->
+    <section class="bg-surface-container-low py-24 px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Sidebar: Direct Channels -->
+          <aside class="lg:col-span-4 space-y-8 order-2 lg:order-1">
+            <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+              <h2 class="text-2xl font-headline font-bold text-on-surface mb-8">Direct Channels</h2>
+              <div class="space-y-8">
+                <div class="flex gap-4 items-start">
+                  <div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+                    <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold uppercase tracking-wider text-on-surface-variant mb-1">Electronic
+                      Correspondence</p>
+                    <a class="text-lg font-medium text-primary hover:underline"
+                      href="mailto:contact@smartsolutions.com">contact@smartsolutions.com</a>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+                    <span class="material-symbols-outlined" data-icon="call">call</span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold uppercase tracking-wider text-on-surface-variant mb-1">Direct Line</p>
+                    <a class="text-lg font-medium text-primary hover:underline" href="tel:+15559876543">+1 555
+                      987-6543</a>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+                    <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold uppercase tracking-wider text-on-surface-variant mb-1">HQ Campus</p>
+                    <p class="text-lg font-medium text-on-surface">
+Piscataway, NJ 08854, United States
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Brand Statement -->
+            <div class="bg-primary p-10 rounded-xl text-on-primary">
+              <p class="font-headline font-bold text-xl leading-snug">"Intelligence is the architecture of the future."
+              </p>
+              <p class="mt-4 text-primary-fixed-dim text-sm opacity-80">— Architectural Intelligence defined.</p>
+            </div>
+          </aside>
+          <!-- Main Form: Project Briefing -->
+          <div class="lg:col-span-8 bg-surface-container-lowest p-10 lg:p-16 rounded-xl shadow-sm order-1 lg:order-2">
+            <div class="mb-12">
+              <h2 class="text-3xl font-headline font-extrabold text-on-surface mb-2">Project Briefing</h2>
+              <p class="text-on-surface-variant">Provide the parameters of your vision to initiate the curation process.
+              </p>
+            </div>
+            <form action="https://formspree.io/f/meevqlao" method="POST" class="space-y-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-2">
+                  <label class="text-sm font-bold text-on-surface uppercase tracking-tight">Full Identity</label>
+                  <input
+                    name="name"
+                    class="w-full bg-surface-container-low border-b-2 border-transparent focus:border-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-all"
+                    placeholder="John Doe" type="text" required />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-sm font-bold text-on-surface uppercase tracking-tight">Organization</label>
+                  <input
+                    name="organization"
+                    class="w-full bg-surface-container-low border-b-2 border-transparent focus:border-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-all"
+                    placeholder="Global Corp" type="text" />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-2">
+                  <label class="text-sm font-bold text-on-surface uppercase tracking-tight">Corporate Email</label>
+                  <input
+                    name="email"
+                    class="w-full bg-surface-container-low border-b-2 border-transparent focus:border-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-all"
+                    placeholder="name@company.com" type="email" required />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-sm font-bold text-on-surface uppercase tracking-tight">Engagement Type</label>
+                  <select
+                    name="engagement_type"
+                    class="w-full bg-surface-container-low border-b-2 border-transparent focus:border-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-all appearance-none">
+                    <option>Enterprise Strategy</option>
+                    <option>Digital Transformation</option>
+                    <option>AI Curation</option>
+                    <option>Cloud Infrastructure</option>
+                  </select>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="text-sm font-bold text-on-surface uppercase tracking-tight">Mission Parameters</label>
+                <textarea
+                  name="message"
+                  class="w-full bg-surface-container-low border-b-2 border-transparent focus:border-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-all resize-none"
+                  placeholder="Define the scope and objectives of your initiative..." rows="5" required></textarea>
+              </div>
+              <div class="pt-4">
+                <button
+                  class="bg-gradient-to-br from-primary to-primary-container text-white px-10 py-4 rounded-xl font-headline font-bold text-lg hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-3"
+                  type="submit">
+                  Initialize Engagement
+                  <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Proximity Section -->
+    <section class="bg-surface py-24 px-8 border-t border-outline-variant/10">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div>
+            <h2 class="text-4xl font-headline font-extrabold text-on-surface mb-4">Our Proximity</h2>
+            <p class="text-on-surface-variant max-w-xl">Strategically located hubs designed to facilitate global
+              collaboration and local intelligence.</p>
+          </div>
+          <div class="flex gap-4">
+            <button
+              class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors">
+              <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+            </button>
+            <button
+              class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors">
+              <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+            </button>
+          </div>
+        </div>
+        <!-- Bento Grid Map/Hubs -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Map Column -->
+          <div
+            class="lg:col-span-2 relative h-[400px] bg-surface-container-high rounded-xl overflow-hidden shadow-sm group">
+            <div class="absolute inset-0 opacity-40 grayscale group-hover:opacity-60 transition-opacity duration-700"
+              data-alt="stylized vector world map with glowing dots representing global innovation hubs in a dark professional blue color theme"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnPGfU3lziEQwm5IMslLHjaAuXzEArBDjqtrgG9Qj16pxAsKgUcFS6wLttVTnFw7HJNIQU1GoB-pACAOlRtG49FSBe-FpnmMbxzY_Z6dgw3EUbqadoa1QxOFcXkD6R7DHVTmXn3JojfJkFQFM2sGh__LgqMziSq3LRfllOeXPGP0mAWEGuG6OHPF3OkwDjfCZjcBl7MeJeJ3Bss-aq23FI6ScUkgl0WbJXYkI2CaV6SwrJrPD44Kx1P3mYhOjjobwQbbZqQ4O4rsBw')">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent pointer-events-none"></div>
+            <!-- Pulse Point Example -->
+            <div class="absolute top-1/3 left-[28%]">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-8 h-8 bg-primary rounded-full animate-ping opacity-25"></div>
+                <div class="w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg"></div>
+                <div class="ml-4 bg-white px-3 py-1 rounded text-xs font-bold shadow-sm">Piscataway, NJ</div>
+              </div>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+              <div class="bg-white/90 backdrop-blur p-4 rounded-lg shadow-xl">
+                <p class="text-xs font-bold text-primary uppercase tracking-widest mb-1">Active Status</p>
+                <p class="text-sm font-medium text-on-surface">Global Network Synchronized</p>
+              </div>
+            </div>
+          </div>
+          <!-- Hubs List -->
+          <div class="flex flex-col gap-4">
+            <div
+              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all border-l-4 border-primary">
+              <h3 class="font-headline font-bold text-on-surface">London Hub</h3>
+              <p class="text-sm text-on-surface-variant">King's Cross Tech District</p>
+              <p class="text-sm mt-2 font-medium">+44 20 7946 0123</p>
+            </div>
+            <div
+              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all border-l-4 border-sky-400">
+              <h3 class="font-headline font-bold text-on-surface">Tokyo Center</h3>
+              <p class="text-sm text-on-surface-variant">Shibuya Scramble Square</p>
+              <p class="text-sm mt-2 font-medium">+81 3 5456 0000</p>
+            </div>
+            <div
+              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all border-l-4 border-slate-300">
+              <h3 class="font-headline font-bold text-on-surface">Berlin Lab</h3>
+              <p class="text-sm text-on-surface-variant">Mitte Creative Quarter</p>
+              <p class="text-sm mt-2 font-medium">+49 30 1234567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 font-inter text-sm antialiased">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+      <div class="mb-8 md:mb-0">
+        <span class="text-lg font-bold text-sky-900 dark:text-white font-headline">Smart Solutions</span>
+        <p class="mt-4 text-slate-500 dark:text-slate-400">© 2024 Smart Solutions. Architectural Intelligence Defined.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <a class="text-slate-500 dark:text-slate-400 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200 hover:opacity-80"
+          href="#">Privacy Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200 hover:opacity-80"
+          href="#">Terms of Service</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200 hover:opacity-80"
+          href="#">Cookie Settings</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200 hover:opacity-80"
+          href="#">Global Offices</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Smart Solutions</title>
+<link href="public/logo.png" rel="icon" type="image/png"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "error": "#ba1a1a",
+                "on-primary": "#ffffff",
+                "tertiary-fixed": "#d5e4f8",
+                "tertiary-container": "#546273",
+                "on-error": "#ffffff",
+                "surface-dim": "#d1dbec",
+                "surface-container-highest": "#d9e3f4",
+                "on-surface-variant": "#41474f",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a",
+                "tertiary": "#3c4a5b",
+                "surface-bright": "#f8f9ff",
+                "on-primary-container": "#c4dfff",
+                "on-tertiary-fixed-variant": "#3a4858",
+                "on-secondary-fixed-variant": "#3c475a",
+                "primary-fixed": "#d0e4ff",
+                "outline": "#727780",
+                "surface-tint": "#276294",
+                "secondary-fixed": "#d8e3fb",
+                "background": "#f8f9ff",
+                "surface-variant": "#d9e3f4",
+                "surface-container-low": "#eef4ff",
+                "secondary-container": "#d5e0f8",
+                "on-secondary-fixed": "#111c2d",
+                "on-primary-fixed-variant": "#004a79",
+                "surface-container-lowest": "#ffffff",
+                "surface-container": "#e5eeff",
+                "secondary": "#545f73",
+                "primary-container": "#2a6496",
+                "on-secondary": "#ffffff",
+                "surface-container-high": "#dfe9fa",
+                "primary-fixed-dim": "#9acbff",
+                "inverse-on-surface": "#eaf1ff",
+                "inverse-surface": "#27313e",
+                "on-tertiary-container": "#cfdef2",
+                "surface": "#f8f9ff",
+                "on-tertiary-fixed": "#0e1d2b",
+                "secondary-fixed-dim": "#bcc7de",
+                "on-background": "#121c28",
+                "tertiary-fixed-dim": "#b9c8db",
+                "primary": "#004c7c",
+                "outline-variant": "#c1c7d0",
+                "on-secondary-container": "#586377",
+                "inverse-primary": "#9acbff",
+                "on-surface": "#121c28",
+                "on-primary-fixed": "#001d34",
+                "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #004c7c 0%, #2a6496 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+<div class="flex items-center gap-3">
+<img alt="Smart Solutions Logo" class="h-8 w-auto" data-alt="minimalist architectural logo representing intelligence and structured digital systems in deep navy and silver" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzpad8axH3s6lnvD2Q9JsdcQ1yRPVwT-gtFvbJguKF5GR9S5NbyixaXfwEI3K7BhFX2aI-aAq1QvxhLM-DrAdBsqoUiKSao7l1se28_bnM21vTaBakczZI6sbk5yhDqOsLLRTl2qPEcu4pN6H03kE9Kmikn5W_psFEVDw-l9A0sOUSWk_ApoqZIn9R7vF-1bnClm9yYpHqRIE_CPNXwK3Vw0MdIcDNAvpCSDX7EGg013jN3m5MxAbf3Ng4l348jib0bCoviZEEZUL9"/>
+<span class="text-2xl font-bold tracking-tighter text-sky-900 font-headline">Smart Solutions</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-headline tracking-tight font-semibold text-slate-500 hover:text-sky-800 transition-colors" href="#">Home</a>
+<a class="font-headline tracking-tight font-semibold text-sky-900 border-b-2 border-sky-900 pb-1" href="#">Services</a>
+<a class="font-headline tracking-tight font-semibold text-slate-500 hover:text-sky-800 transition-colors" href="#">About</a>
+<a class="font-headline tracking-tight font-semibold text-slate-500 hover:text-sky-800 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-semibold text-sm hover:opacity-90 transition-all duration-300">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden px-8 py-20 bg-surface">
+<div class="max-w-7xl mx-auto editorial-grid w-full relative z-10">
+<div class="col-span-12 lg:col-span-7">
+<div class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest uppercase mb-6">
+                        Architectural Intelligence
+                    </div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                        Precision Built <br/>
+<span class="text-gradient">Digital Systems</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10">
+                        We design and deploy high-impact AI infrastructures and scalable commerce ecosystems. Engineering excellence meets human-centric design to deliver less than 100ms latency at global scale.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:bg-primary-container transition-all">Explore Architecture</button>
+<button class="border border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all">View Case Studies</button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="abstract digital architectural blueprint with blue glowing circuit lines and geometric precision on a dark navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj3_ITMO-PX93CgkYhhaUK5y65HRs7UHfIERjAV6WEVlTrkzyUXaRLdHFO2iaZCtFeALE4jgFJ5PX6cimr1hcDVgnZ-qwxOvjF9gSbs_F_jFGjjO4Xlf-EgBKxOiH5w-bFaUKh4prZ4s2zq64B34pVFpxrYoy2dqdEz6OpYixicsrBeq32aBJVI_aWXMW2L36RGwwrdUaZ9aJkTF2OGd6vUsv9PWvx0VYc6djOh1RMuBfZiiX1PqyGHhAEjMDP1QGtp3Y4GIF79xys"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+</div>
+<!-- Floating Stat Card -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl border border-outline-variant/10 max-w-xs">
+<span class="material-symbols-outlined text-primary text-3xl mb-3" data-icon="speed">speed</span>
+<h4 class="font-bold text-on-surface text-xl">&lt;100ms Latency</h4>
+<p class="text-on-surface-variant text-sm">Optimized for global real-time intelligence delivery.</p>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0 transform translate-x-20 skew-x-6"></div>
+</section>
+<!-- Core Service Cards - Bento Style -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-4">Core Services</h2>
+<p class="text-on-surface-variant max-w-lg">Advanced engineering solutions tailored for high-stakes enterprise performance.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
+<!-- AI Solutions (Featured) -->
+<div class="md:col-span-6 lg:col-span-8 bg-surface-container-lowest p-10 rounded-2xl group hover:bg-surface-bright transition-all duration-300">
+<div class="flex flex-col h-full">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="psychology" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="text-primary font-bold text-2xl">99.9% Uptime</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">AI Solutions</h3>
+<p class="text-on-surface-variant text-lg mb-8 max-w-md">Proprietary neural architectures designed for predictive analytics and automated decision engines. We build the intelligence that drives your future.</p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-semibold text-on-surface-variant">NEURAL NETS</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-semibold text-on-surface-variant">MLOPS</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-semibold text-on-surface-variant">NLP</span>
+</div>
+</div>
+</div>
+<!-- IT Consulting -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="architecture">architecture</span>
+<h3 class="font-headline text-xl font-bold mb-3">IT Consulting</h3>
+<p class="text-on-surface-variant text-sm mb-6">Strategic roadmap development for enterprise legacy modernization and cloud-native transitions.</p>
+<div class="text-primary font-bold">2.5x Efficiency Gain</div>
+</div>
+<!-- Web Development -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="web">web</span>
+<h3 class="font-headline text-xl font-bold mb-3">Web Development</h3>
+<p class="text-on-surface-variant text-sm mb-6">High-performance web applications built with modern frameworks for sub-second interaction times.</p>
+<div class="text-primary font-bold">&lt;1.2s LCP</div>
+</div>
+<!-- Mobile Development -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="smartphone">smartphone</span>
+<h3 class="font-headline text-xl font-bold mb-3">Mobile Development</h3>
+<p class="text-on-surface-variant text-sm mb-6">Native and cross-platform mobile experiences that prioritize security and fluid animations.</p>
+<div class="text-primary font-bold">4.9 Star Avg</div>
+</div>
+<!-- E-commerce Solutions -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="shopping_cart">shopping_cart</span>
+<h3 class="font-headline text-xl font-bold mb-3">E-commerce</h3>
+<p class="text-on-surface-variant text-sm mb-6">Scalable commerce engines capable of handling 10k+ concurrent transactions without friction.</p>
+<div class="text-primary font-bold">Zero-Downtime Scaling</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What We Deliver Section -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto editorial-grid">
+<div class="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-6">What We <br/>Deliver</h2>
+<p class="text-on-surface-variant leading-relaxed">Beyond code, we provide the architectural foundation for digital dominance. Every delivery is audited for security, performance, and future scalability.</p>
+</div>
+<div class="col-span-12 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-12 lg:pl-20">
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="schema">schema</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Scalable Software</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Modular systems that grow with your user base, preventing technical debt from stalling your innovation cycles.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Process Optimization</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Automation of repetitive workflows using intelligent agents, reducing operational overhead by up to 40%.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="security">security</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Secure Architecture</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Zero-trust security models integrated into the core architecture, ensuring data integrity and compliance by design.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="analytics">analytics</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Actionable Data</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Real-time telemetry and reporting that turns raw system data into strategic business insights.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Anchor Section -->
+<section class="h-96 w-full relative">
+<img class="w-full h-full object-cover grayscale opacity-40" data-alt="close-up macro shot of a sophisticated high-end computer motherboard with precision gold circuits and architectural beauty" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArm7Fe_qamozDKyv-JCyuzOHrew58YIymNHOdim3rUv3MYHLTLnezZNhnyhjIvqFJJG3jTD0mZhvkWUZ_9Bl7O0E1yjKyDnByzkMMRdnK4t63ziWFBjpJBJSeuhBX6tTAtkm6tH9HsEa_SVBIaW3S8XiMWooaq9_CexMsLpuCe3N95WMGSGJ33OXVe4mUwh4cilDMwQhhf5PGfdbRJTGE3CpdOMF5Ew9STeJb3XWL8JrGpaKevH2geTMqG5VwcuchTBxnlslSb3-Hq"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface-container-low"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center px-8">
+<h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tighter mb-4 text-on-surface">Ready to Architect Your Future?</h2>
+<p class="text-on-surface-variant mb-8 max-w-lg mx-auto">Join the ranks of enterprises powered by Architectural Intelligence.</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold shadow-xl shadow-primary/20">Start a Consultation</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-sky-900 mb-2">Smart Solutions</div>
+<p class="font-inter text-sm antialiased text-slate-500">© 2024 Smart Solutions. Architectural Intelligence Defined.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-sm text-slate-500 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200" href="#">Privacy Policy</a>
+<a class="font-inter text-sm text-slate-500 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200" href="#">Terms of Service</a>
+<a class="font-inter text-sm text-slate-500 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200" href="#">Cookie Settings</a>
+<a class="font-inter text-sm text-slate-500 hover:underline decoration-sky-500 underline-offset-4 transition-opacity duration-200" href="#">Global Offices</a>
+</div>
+</div>
+</footer>
+</body></html>

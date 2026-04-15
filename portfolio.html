@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | Smart Solutions</title>
+<link href="public/logo.png" rel="icon" type="image/png"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#546273",
+                    "tertiary-fixed": "#d5e4f8",
+                    "inverse-surface": "#27313e",
+                    "surface-container-highest": "#d9e3f4",
+                    "surface-container-high": "#dfe9fa",
+                    "secondary-fixed": "#d8e3fb",
+                    "on-tertiary-fixed": "#0e1d2b",
+                    "tertiary-fixed-dim": "#b9c8db",
+                    "surface-tint": "#276294",
+                    "inverse-primary": "#9acbff",
+                    "primary-fixed": "#d0e4ff",
+                    "on-surface-variant": "#41474f",
+                    "primary-container": "#2a6496",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#111c2d",
+                    "background": "#f8f9ff",
+                    "on-primary-fixed-variant": "#004a79",
+                    "primary": "#004c7c",
+                    "outline": "#727780",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#cfdef2",
+                    "surface": "#f8f9ff",
+                    "on-surface": "#121c28",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#9acbff",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#3c4a5b",
+                    "secondary-fixed-dim": "#bcc7de",
+                    "secondary-container": "#d5e0f8",
+                    "surface-dim": "#d1dbec",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#eef4ff",
+                    "on-background": "#121c28",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-primary-container": "#c4dfff",
+                    "outline-variant": "#c1c7d0",
+                    "on-tertiary-fixed-variant": "#3a4858",
+                    "surface-variant": "#d9e3f4",
+                    "surface-bright": "#f8f9ff",
+                    "surface-container": "#e5eeff",
+                    "secondary": "#545f73",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "on-secondary-container": "#586377",
+                    "on-primary-fixed": "#001d34",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; background-color: #f8f9ff; color: #121c28; }
+      h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl transition-colors duration-200 border-b border-surface-variant/30">
+<div class="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Smart Solutions Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uie6ObgjALEw32H97HtEpgFMlrMJDW4fS6ob2Puh31XNuc7ocJ8ULjHGSBVJRdoz32odi8Tq15uVfgmtX0bxv7QmRz0T400PAF3AqcXpdJuGFUy7GYr1ZPLF1Csycjt6I8ZHDJQmysP2XHE9e--P6IrFrqPqLFLjElDOxW2czD05bZzGniUfH-c6YEcxS4gjKmn0Bl-F_T7hesadlLiKH9Bh5UilcvBQGzxqREvpuEASDt_Eqyj64DZRKLhuawvwmQfOkd1V3mxamA"/>
+<div class="text-xl font-bold tracking-tighter text-sky-900 dark:text-white font-headline hidden sm:block">Smart Solutions</div>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope tracking-tight hover:text-sky-600 dark:hover:text-sky-300 transition-colors duration-200" href="#">Services</a>
+<a class="text-sky-700 dark:text-sky-300 border-b-2 border-sky-700 pb-1 font-manrope tracking-tight font-semibold" href="#">Portfolio</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope tracking-tight hover:text-sky-600 dark:hover:text-sky-300 transition-colors duration-200" href="#">Approach</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope tracking-tight hover:text-sky-600 dark:hover:text-sky-300 transition-colors duration-200" href="#">Careers</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope tracking-tight hover:text-sky-600 dark:hover:text-sky-300 transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-semibold text-sm transition-all hover:opacity-90 shadow-sm">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative px-8 py-20 md:py-28 overflow-hidden bg-white">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block bg-primary-container/10 text-primary px-3 py-1 rounded-md text-[10px] font-bold tracking-[0.05em] uppercase mb-6">Our Work</span>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                        Architectural <br/>
+<span class="text-primary">Intelligence</span> in Motion.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-body">
+                        We partner with industry leaders to design and deploy complex digital ecosystems that redefine efficiency and scale. Explore our recent engineering milestones.
+                    </p>
+</div>
+<div class="relative hidden lg:block">
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl bg-surface-container-high border border-outline-variant/30">
+<img alt="Engineering Concept" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMt_fB91S52K742FsUFAzpxFToqvbWhV7gs1KZt9Tz6XP5iGOtUCu_k8pF3XLQi6k_2XIXGbDtT7mLDevS533GkpN6TwY5mL5RYgphEwrZhl_tqmD6vb2ScoJRR_Uk1JKJWb73RNOibhtc-xex7AN4iCqWCrXoP-dsIkjW5lbF8KZzlbEhc2sEz-xNaespqkYCJB08ZgIKglnzHvEmVRubOeT1FyODnS48MZSnevs8_4heTlbmxl_qkspgtD5E-lkycRhR0j63C8II"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Our Portfolio Matters -->
+<section class="px-8 py-16 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-on-surface mb-6">Why Our Portfolio Matters</h2>
+<p class="text-lg text-on-surface-variant max-w-3xl mx-auto font-body">
+                    We don't just build software; we architect the structural foundations that allow modern enterprises to scale without friction. Our work is a testament to technical rigor and strategic vision.
+                </p>
+</div>
+</section>
+<!-- Portfolio Projects -->
+<section class="px-8 py-24">
+<div class="max-w-7xl mx-auto space-y-24">
+<!-- Project 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1">
+<h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 01</h3>
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">Advanced AI Chatbot for Smart Vendor Search</h2>
+<div class="space-y-6">
+<div>
+<h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
+<p class="text-on-surface-variant">Sponsors faced delays in finding and evaluating suitable vendors due to manual searches, fragmented data, and slow assessment workflows</p>
+</div>
+<div>
+<h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
+<p class="text-on-surface-variant">Developed an AI-powered platform that enables Sponsors to ask discovery questions in plain language and instantly find relevant Vendors based on service capabilities, therapeutic experience, GxP compliance, and overall fit, significantly speeding up the evaluation process.</p>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Python</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">SQL</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">AI/NLP Models</span>
+</div>
+<div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+<h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Faster insights</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Improved efficiency</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Scalable architecture</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
+<img alt="Data Intelligence Visualization" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_KHQLMncPkH-bNZ1xMTRBafdOpnna6MnNoH4mBqbWq4dmleqSBePFl5sf9qyHYqRN8jqP5vCmkHBwQdue92Op2-jDGh1FOsnP3EBf0VROdqIYVBriTdKrQYLTlhDYLnqwlaLXky2kgAohVbtVJwzTF0R8H45HtL-eaPPQcvQ8oQ4JSxiTLBJRB4q0PVZKdr_GNatphSLC9B7Svaj_ZWRyk-Yyv9f9KOotxYCWr3VF3Rseitgae2W-gewsG5FL6vohdQxuxUGBeRvA"/>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="rounded-xl overflow-hidden shadow-lg aspect-[4/3] order-1">
+<img alt="Secure Web Application" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZEtGV-gniuCHuqPYX7Z-3r9vIQHW7hRjYRwGfa9CcPNvBy0YjvGz55Jj0WQb3eAXT9owZHoVZYcC4-5fzUBVi6ioZwQIRDNVuQ4eizmMBvPEYAuVYzf0GVzjoj3vQwLuzpGrwr3KJSBREc2FxEwPqNVxL4FTh3yHsroimxm5q2ldnkJ4BXgmXeZSfBgDdRvDb3nc3lNff6PjTtFATZnUiEEvJSZmSPU7-tPxwvTaL87bNYwLqxdDFxvW_7lFgKzfajIEDJ3Qdu1Tk"/>
+</div>
+<div class="order-2">
+<h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 02</h3>
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">Custom Web Application</h2>
+<div class="space-y-6">
+<div>
+<h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
+<p class="text-on-surface-variant">The client needed a secure, high-availability web application to manage internal administrative workflows and sensitive document distribution.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
+<p class="text-on-surface-variant">Secure web application development utilizing encrypted endpoints and a modular UI for seamless administrative control and reporting.</p>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Node.js</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">MySQL</span>
+</div>
+<div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+<h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Improved workflow</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Reduced manual time</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Better visibility</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1">
+<h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 03</h3>
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">E-commerce Platform</h2>
+<div class="space-y-6">
+<div>
+<h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
+<p class="text-on-surface-variant">A scalable e-commerce platform was needed to handle seasonal traffic spikes and integrate complex multi-vendor inventory systems.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
+<p class="text-on-surface-variant">Robust platform development focusing on performance optimization, automated inventory tracking, and custom integration layers.</p>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Shopify/Custom</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Node.js</span>
+</div>
+<div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+<h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Increased sales</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Improved tracking</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Better inventory visibility</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
+<img alt="E-commerce Architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfDCYGsfCvBKM1QVaRdBDouHnzouC9xEW0hDjJc7Q9mTRgUr9Qos_5KNCI5TGsbCoPFq7HewtssGqWduGcpIkms0rpX9-UII01sLB6IaqRN4hh5l3-MRRALd7-WF9wWUATl62mrydzbylSFW56lMUDIdVucypev6X-01cny3DLnIyJyLYHt-jcBL2ZKft2M0IPzKuagHrHioSLPIQERyecTQDnW5VUcoAX3iuPfjOjMWkvhsAbbnS4qfX8YKCmsfPF9nxbumH8R2zp"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Capabilities Demonstrated -->
+<section class="px-8 py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-3xl font-bold text-on-surface mb-4">Key Capabilities Demonstrated</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">The engineering principles that underpin every Smart Solutions delivery.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Real-time Data Processing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Handling millions of events per second with sub-millisecond latency for critical business insights.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">security</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Enterprise-grade Security</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">SOC2-compliant architectures ensuring data integrity and protection at every layer of the stack.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-primary">cloud_done</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Cloud-Native Scalability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Designing for growth with auto-scaling infrastructure that adjusts to demand in real-time.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Takeaways Section -->
+<section class="px-8 py-20 bg-white">
+<div class="max-w-5xl mx-auto">
+<div class="bg-inverse-surface text-white p-10 md:p-16 rounded-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<h2 class="text-3xl font-bold mb-10 relative z-10">Key Takeaways</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
+<div class="flex gap-4">
+<span class="text-primary-fixed-dim text-2xl font-black">01</span>
+<div>
+<h4 class="font-bold mb-2">Strategy First</h4>
+<p class="text-on-surface-variant text-sm">We define the business outcome before selecting the technology stack.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="text-primary-fixed-dim text-2xl font-black">02</span>
+<div>
+<h4 class="font-bold mb-2">Technical Rigor</h4>
+<p class="text-on-surface-variant text-sm">Our code is built for high-concurrency and extreme reliability.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="text-primary-fixed-dim text-2xl font-black">03</span>
+<div>
+<h4 class="font-bold mb-2">User Centric</h4>
+<p class="text-on-surface-variant text-sm">Complex logic is always paired with intuitive, high-performance interfaces.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="text-primary-fixed-dim text-2xl font-black">04</span>
+<div>
+<h4 class="font-bold mb-2">Scalable Foundation</h4>
+<p class="text-on-surface-variant text-sm">Our architectures grow with you, from MVP to global enterprise scale.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="px-8 py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-on-surface mb-4">Client Testimonials</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-10 rounded-xl shadow-sm italic text-on-surface-variant border border-outline-variant/10">
+                        "Smart Solutions transformed our data chaos into a strategic asset. The AI implementation was seamless and the results were immediate."
+                        <div class="mt-6 not-italic font-bold text-on-surface">— CTO, Global Logistics Firm</div>
+</div>
+<div class="bg-white p-10 rounded-xl shadow-sm italic text-on-surface-variant border border-outline-variant/10">
+                        "The level of technical expertise and architectural foresight they brought to our e-commerce project was world-class. Highly recommended."
+                        <div class="mt-6 not-italic font-bold text-on-surface">— Product Director, Retail Tech</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="px-8 py-24 bg-white">
+<div class="max-w-7xl mx-auto bg-primary rounded-2xl p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-primary mb-8 relative z-10">Start Your Digital Transformation</h2>
+<p class="text-primary-fixed/80 text-lg mb-10 max-w-2xl mx-auto relative z-10">
+                    Ready to build the future of your industry? Let's discuss how our architectural intelligence can optimize your operations.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
+<button class="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-fixed transition-colors">
+                        Book a Strategic Audit
+                    </button>
+<button class="bg-transparent border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
+                        Download Capabilities Deck
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white w-full border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="flex items-center gap-2 mb-2">
+<img alt="Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uie6ObgjALEw32H97HtEpgFMlrMJDW4fS6ob2Puh31XNuc7ocJ8ULjHGSBVJRdoz32odi8Tq15uVfgmtX0bxv7QmRz0T400PAF3AqcXpdJuGFUy7GYr1ZPLF1Csycjt6I8ZHDJQmysP2XHE9e--P6IrFrqPqLFLjElDOxW2czD05bZzGniUfH-c6YEcxS4gjKmn0Bl-F_T7hesadlLiKH9Bh5UilcvBQGzxqREvpuEASDt_Eqyj64DZRKLhuawvwmQfOkd1V3mxamA"/>
+<div class="text-lg font-black text-sky-900 font-headline">Smart Solutions</div>
+</div>
+<p class="text-slate-500 text-sm font-inter">Architectural Intelligence in Motion.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-slate-500 text-sm font-inter hover:text-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 text-sm font-inter hover:text-primary transition-all" href="#">Terms of Service</a>
+<a class="text-slate-500 text-sm font-inter hover:text-primary transition-all" href="#">LinkedIn</a>
+<a class="text-slate-500 text-sm font-inter hover:text-primary transition-all" href="#">Insights</a>
+</div>
+<div class="text-slate-500 text-xs font-inter">
+                © 2024 Smart Solutions.
+            </div>
+</div>
+</footer>
+</body></html>

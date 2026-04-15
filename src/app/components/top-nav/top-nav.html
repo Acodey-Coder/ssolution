@@ -1,0 +1,39 @@
+<nav
+    class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm dark:shadow-none">
+    <div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+            <img alt="Smart Solutions Logo" class="h-40 md:h-33 w-auto object-contain cursor-pointer" src="logo.png"
+                routerLink="/" />
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="font-headline tracking-tight text-sm font-semibold pb-1" [class.border-b-2]="router.url === '/'"
+                [class.border-slate-800]="router.url === '/'" [class.dark:border-blue-400]="router.url === '/'"
+                [class.text-slate-800]="router.url === '/'" [class.text-slate-500]="router.url !== '/'"
+                routerLink="/">Home</a>
+            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out pb-1"
+                [class.border-b-2]="router.url === '/services'" [class.border-slate-800]="router.url === '/services'"
+                [class.dark:border-blue-400]="router.url === '/services'"
+                [class.text-slate-800]="router.url === '/services'" [class.text-slate-500]="router.url !== '/services'"
+                routerLink="/services">Services</a>
+            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out pb-1"
+                [class.border-b-2]="router.url === '/portfolio'" [class.border-slate-800]="router.url === '/portfolio'"
+                [class.dark:border-blue-400]="router.url === '/portfolio'"
+                [class.text-slate-800]="router.url === '/portfolio'" [class.text-slate-500]="router.url !== '/portfolio'"
+                routerLink="/portfolio">Portfolio</a>
+            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out pb-1"
+                [class.border-b-2]="router.url === '/about'" [class.border-slate-800]="router.url === '/about'"
+                [class.dark:border-blue-400]="router.url === '/about'" [class.text-slate-800]="router.url === '/about'"
+                [class.text-slate-500]="router.url !== '/about'" routerLink="/about">About Us</a>
+            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-colors duration-300 ease-in-out pb-1"
+                [class.border-b-2]="router.url === '/contact'" [class.border-slate-800]="router.url === '/contact'"
+                [class.dark:border-blue-400]="router.url === '/contact'"
+                [class.text-slate-800]="router.url === '/contact'" [class.text-slate-500]="router.url !== '/contact'"
+                routerLink="/contact">Contact</a>
+        </div>
+        <button
+            class="editorial-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-tight shadow-md transition-transform active:scale-95"
+            routerLink="/contact">
+            Get Started
+        </button>
+    </div>
+</nav>
