@@ -1,11 +1,13 @@
 <nav
     class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm dark:shadow-none">
-    <div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-7xl mx-auto">
         <div class="flex items-center gap-3">
-            <img alt="Smart Solutions Logo" class="h-40 md:h-33 w-auto object-contain cursor-pointer" src="logo.png"
-                routerLink="/" />
+            <img alt="Smart Solutions Logo" class="h-24 md:h-33 w-auto object-contain cursor-pointer" src="logo.png"
+                routerLink="/" (click)="closeMenu()" />
         </div>
-        <div class="hidden md:flex items-center gap-8">
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center gap-8">
             <a class="font-headline tracking-tight text-sm font-semibold pb-1" [class.border-b-2]="router.url === '/'"
                 [class.border-slate-800]="router.url === '/'" [class.dark:border-blue-400]="router.url === '/'"
                 [class.text-slate-800]="router.url === '/'" [class.text-slate-500]="router.url !== '/'"
@@ -30,10 +32,43 @@
                 [class.text-slate-800]="router.url === '/contact'" [class.text-slate-500]="router.url !== '/contact'"
                 routerLink="/contact">Contact</a>
         </div>
-        <button
-            class="editorial-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-tight shadow-md transition-transform active:scale-95"
-            routerLink="/contact">
-            Get Started
-        </button>
+
+        <div class="flex items-center gap-4">
+            <button
+                class="hidden md:block editorial-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-tight shadow-md transition-transform active:scale-95"
+                routerLink="/contact" (click)="closeMenu()">
+                Get Started
+            </button>
+            
+            <!-- Mobile Menu Toggle -->
+            <button (click)="toggleMenu()" class="lg:hidden p-2 text-slate-600 dark:text-slate-300">
+                <span class="material-symbols-outlined text-3xl">
+                    {{ isMenuOpen ? 'close' : 'menu' }}
+                </span>
+            </button>
+        </div>
     </div>
-</nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div *ngIf="isMenuOpen" 
+        class="lg:hidden fixed inset-0 top-20 bg-white dark:bg-slate-900 z-40 flex flex-col p-8 gap-6 animate-in fade-in slide-in-from-top duration-300">
+        <a class="text-2xl font-headline font-bold" [class.text-primary]="router.url === '/'"
+            routerLink="/" (click)="closeMenu()">Home</a>
+        <a class="text-2xl font-headline font-bold" [class.text-primary]="router.url === '/services'"
+            routerLink="/services" (click)="closeMenu()">Services</a>
+        <a class="text-2xl font-headline font-bold" [class.text-primary]="router.url === '/portfolio'"
+            routerLink="/portfolio" (click)="closeMenu()">Portfolio</a>
+        <a class="text-2xl font-headline font-bold" [class.text-primary]="router.url === '/about'"
+            routerLink="/about" (click)="closeMenu()">About Us</a>
+        <a class="text-2xl font-headline font-bold" [class.text-primary]="router.url === '/contact'"
+            routerLink="/contact" (click)="closeMenu()">Contact</a>
+        
+        <div class="mt-8 flex flex-col gap-4">
+            <button
+                class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-lg tracking-tight shadow-lg"
+                routerLink="/contact" (click)="closeMenu()">
+                Get Started
+            </button>
+        </div>
+    </div>
+</nav>

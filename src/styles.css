@@ -2,11 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply antialiased text-on-surface bg-surface;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+}
+
 @layer utilities {
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
   .editorial-gradient {
-    background: linear-gradient(135deg, #52718a 0%, #4a5a6a 100%);
+    background: linear-gradient(135deg, #121c28 0%, #1e2e3e 100%);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-fixed-dim to-primary-container;
   }
 }

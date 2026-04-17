@@ -1,22 +1,24 @@
-<main class="pt-24">
+<main class="pt-16 md:pt-24 overflow-x-hidden">
   <!-- Hero Section -->
-  <section class="relative min-h-[850px] flex items-center overflow-hidden bg-surface">
-    <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
+  <section class="relative min-h-[600px] md:min-h-[850px] flex items-center overflow-x-hidden bg-surface py-12 md:py-0">
+    <div
+      class="max-w-7xl mx-auto px-4 md:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10 text-center lg:text-left">
       <div class="lg:col-span-7 z-10">
         <span
           class="inline-block bg-secondary-container text-on-secondary-fixed-variant px-4 py-1 rounded-full text-[10px] font-bold tracking-[0.05em] uppercase mb-6 font-label">
           Architectural Intelligence
         </span>
         <h1
-          class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+          class="font-headline text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
           Precision Built <br />
           <span class="text-gradient">Digital Systems</span>
         </h1>
-        <p class="text-secondary text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+        <p
+          class="text-secondary text-base md:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 mb-8 md:mb-10 leading-relaxed">
           We design and deploy high-impact AI infrastructures and scalable commerce ecosystems. Engineering excellence
           meets human-centric design to deliver less than 100ms latency at global scale.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <button
             class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight shadow-lg hover:shadow-xl transition-all"
             routerLink="/about">
@@ -29,8 +31,8 @@
           </button>
         </div>
       </div>
-      <div class="lg:col-span-5 relative h-full min-h-[400px]">
-        <div class="absolute inset-0 bg-surface-container-high rounded-3xl overflow-hidden shadow-2xl">
+      <div class="lg:col-span-5 relative h-full min-h-[300px] md:min-h-[400px]">
+        <div class="absolute inset-0 bg-surface-container-high rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
           <img class="w-full h-full object-cover"
             data-alt="abstract digital architectural blueprint with blue glowing circuit lines and geometric precision on a dark navy background"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj3_ITMO-PX93CgkYhhaUK5y65HRs7UHfIERjAV6WEVlTrkzyUXaRLdHFO2iaZCtFeALE4jgFJ5PX6cimr1hcDVgnZ-qwxOvjF9gSbs_F_jFGjjO4Xlf-EgBKxOiH5w-bFaUKh4prZ4s2zq64B34pVFpxrYoy2dqdEz6OpYixicsrBeq32aBJVI_aWXMW2L36RGwwrdUaZ9aJkTF2OGd6vUsv9PWvx0VYc6djOh1RMuBfZiiX1PqyGHhAEjMDP1QGtp3Y4GIF79xys" />
@@ -38,56 +40,60 @@
         </div>
         <!-- Floating Stat Card -->
         <div
-          class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-[0_20px_40px_rgba(18,28,40,0.06)] border border-outline-variant/10 max-w-[240px]">
+          class="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-surface-container-lowest p-4 md:p-6 rounded-xl shadow-[0_20px_40px_rgba(18,28,40,0.06)] border border-outline-variant/10 max-w-[200px] md:max-w-[240px] z-20">
           <div class="flex items-center gap-3 mb-2">
             <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">speed</span>
             <span class="text-[10px] font-bold font-label uppercase tracking-wider text-secondary">Latency</span>
           </div>
-          <div class="text-2xl font-bold font-headline text-on-surface">&lt;100ms</div>
-          <div class="text-[11px] text-on-surface-variant font-body">Optimized for global real-time intelligence
+          <div class="text-xl md:text-2xl font-bold font-headline text-on-surface">&lt;100ms</div>
+          <div class="text-[10px] md:text-[11px] text-on-surface-variant font-body">Optimized for global real-time
+            intelligence
             delivery.</div>
         </div>
       </div>
     </div>
   </section>
   <!-- Core Service Cards - Bento Style -->
-  <section class="py-24 px-8 bg-surface-container-low">
+  <section class="py-16 md:py-24 px-4 md:px-8 bg-surface-container-low">
     <div class="max-w-7xl mx-auto">
-      <div class="flex justify-between items-end mb-16">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 md:mb-16 text-center md:text-left">
         <div>
-          <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-4">Core Services</h2>
+          <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-4">Core Services
+          </h2>
           <p class="text-on-surface-variant max-w-lg">Advanced engineering solutions tailored for high-stakes enterprise
             performance.</p>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <!-- AI Solutions (Featured) -->
         <div
-          class="md:col-span-6 lg:col-span-8 bg-surface-container-lowest p-10 rounded-2xl group hover:bg-surface-bright transition-all duration-300">
+          class="lg:col-span-8 bg-surface-container-lowest p-6 md:p-10 rounded-2xl group hover:bg-surface-bright transition-all duration-300">
           <div class="flex flex-col h-full">
-            <div class="flex justify-between items-start mb-12">
-              <span class="material-symbols-outlined text-4xl text-primary" data-icon="psychology"
+            <div class="flex justify-between items-start mb-8 md:mb-12">
+              <span class="material-symbols-outlined text-3xl md:text-4xl text-primary" data-icon="psychology"
                 style="font-variation-settings: 'FILL' 1;">psychology</span>
-              <span class="text-primary font-bold text-2xl">99.9% Uptime</span>
+              <span class="text-primary font-bold text-lg md:text-2xl">99.9% Uptime</span>
             </div>
-            <h3 class="font-headline text-3xl font-bold mb-4">AI Solutions</h3>
-            <p class="text-on-surface-variant text-lg mb-8 max-w-md">Proprietary neural architectures designed for
+            <h3 class="font-headline text-2xl md:text-3xl font-bold mb-4">AI Solutions</h3>
+            <p class="text-on-surface-variant text-sm md:text-lg mb-8 max-w-md">Proprietary neural architectures
+              designed for
               predictive analytics and automated decision engines. We build the intelligence that drives your future.
             </p>
             <div class="mt-auto flex flex-wrap gap-2">
               <span
-                class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-semibold text-on-surface-variant">NEURAL
+                class="px-3 md:px-4 py-1.5 bg-surface-container-high rounded-full text-[10px] md:text-xs font-semibold text-on-surface-variant">NEURAL
                 NETS</span>
               <span
-                class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-semibold text-on-surface-variant">MLOPS</span>
+                class="px-3 md:px-4 py-1.5 bg-surface-container-high rounded-full text-[10px] md:text-xs font-semibold text-on-surface-variant">MLOPS</span>
               <span
-                class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-semibold text-on-surface-variant">NLP</span>
+                class="px-3 md:px-4 py-1.5 bg-surface-container-high rounded-full text-[10px] md:text-xs font-semibold text-on-surface-variant">NLP</span>
             </div>
           </div>
         </div>
         <!-- IT Consulting -->
         <div
-          class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+          class="lg:col-span-4 bg-surface-container-lowest p-6 md:p-8 rounded-2xl group hover:bg-surface-bright transition-all">
           <span class="material-symbols-outlined text-3xl text-primary mb-6"
             data-icon="architecture">architecture</span>
           <h3 class="font-headline text-xl font-bold mb-3">IT Consulting</h3>
@@ -97,7 +103,7 @@
         </div>
         <!-- Web Development -->
         <div
-          class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+          class="lg:col-span-4 bg-surface-container-lowest p-6 md:p-8 rounded-2xl group hover:bg-surface-bright transition-all">
           <span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="web">web</span>
           <h3 class="font-headline text-xl font-bold mb-3">Web Development</h3>
           <p class="text-on-surface-variant text-sm mb-6">High-performance web applications built with modern frameworks
@@ -106,7 +112,7 @@
         </div>
         <!-- Mobile Development -->
         <div
-          class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+          class="lg:col-span-4 bg-surface-container-lowest p-6 md:p-8 rounded-2xl group hover:bg-surface-bright transition-all">
           <span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="smartphone">smartphone</span>
           <h3 class="font-headline text-xl font-bold mb-3">Mobile Development</h3>
           <p class="text-on-surface-variant text-sm mb-6">Native and cross-platform mobile experiences that prioritize
@@ -115,7 +121,7 @@
         </div>
         <!-- E-commerce Solutions -->
         <div
-          class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl group hover:bg-surface-bright transition-all">
+          class="lg:col-span-4 bg-surface-container-lowest p-6 md:p-8 rounded-2xl group hover:bg-surface-bright transition-all">
           <span class="material-symbols-outlined text-3xl text-primary mb-6"
             data-icon="shopping_cart">shopping_cart</span>
           <h3 class="font-headline text-xl font-bold mb-3">E-commerce</h3>
@@ -128,150 +134,156 @@
   </section>
 
   <!-- Additional Services -->
-  <section class="py-24 px-8 bg-surface">
+  <section class="py-16 md:py-24 px-4 md:px-8 bg-surface">
     <div class="max-w-7xl mx-auto">
-      <div class="mb-16 text-center">
-        <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-4">Additional Services</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto text-lg">Comprehensive capabilities to supplement and
+      <div class="mb-12 md:mb-16 text-center">
+        <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-4">Additional Services
+        </h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto text-base md:text-lg">Comprehensive capabilities to
+          supplement and
           enhance your core infrastructure, delivering end-to-end digital excellence.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <!-- 01 UX/UI Design -->
         <div
-          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
+          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-8 md:p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
           <div
-            class="absolute -top-4 -right-4 p-8 text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
+            class="absolute -top-4 -right-4 p-8 text-6xl md:text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
             01</div>
           <div
-            class="mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
+            class="mb-6 md:mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
             <span class="material-symbols-outlined text-2xl" data-icon="design_services">design_services</span>
           </div>
-          <h3 class="font-headline text-2xl font-bold mb-4 relative z-10">UX/UI Design</h3>
-          <p class="text-on-surface-variant mb-8 relative z-10 leading-relaxed">We craft intuitive, human-centric
+          <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 relative z-10">UX/UI Design</h3>
+          <p class="text-on-surface-variant text-sm md:text-base mb-8 relative z-10 leading-relaxed">We craft intuitive,
+            human-centric
             interfaces that translate complex technical capabilities into seamless digital experiences. Our design
             philosophy bridges aesthetics with functional intelligence.</p>
-          <div
-            class="flex items-center gap-2 text-primary font-bold text-sm relative z-10 group-hover:gap-4 transition-all w-fit cursor-pointer">
-          </div>
         </div>
 
         <!-- 02 Quality Assurance -->
         <div
-          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
+          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-8 md:p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
           <div
-            class="absolute -top-4 -right-4 p-8 text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
+            class="absolute -top-4 -right-4 p-8 text-6xl md:text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
             02</div>
           <div
-            class="mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
+            class="mb-6 md:mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
             <span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
           </div>
-          <h3 class="font-headline text-2xl font-bold mb-4 relative z-10">Quality Assurance</h3>
-          <p class="text-on-surface-variant mb-8 relative z-10 leading-relaxed">Rigorous automated and manual testing
+          <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 relative z-10">Quality Assurance</h3>
+          <p class="text-on-surface-variant text-sm md:text-base mb-8 relative z-10 leading-relaxed">Rigorous automated
+            and manual testing
             pipelines ensuring fault-tolerant deployments. We identify regression risks before they reach production,
             guaranteeing system resilience.</p>
-          <div
-            class="flex items-center gap-2 text-primary font-bold text-sm relative z-10 group-hover:gap-4 transition-all w-fit cursor-pointer">
-          </div>
         </div>
 
         <!-- 03 Data Intelligence & Analytics -->
         <div
-          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
+          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-8 md:p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
           <div
-            class="absolute -top-4 -right-4 p-8 text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
+            class="absolute -top-4 -right-4 p-8 text-6xl md:text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
             03</div>
           <div
-            class="mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
+            class="mb-6 md:mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
             <span class="material-symbols-outlined text-2xl" data-icon="query_stats">query_stats</span>
           </div>
-          <h3 class="font-headline text-2xl font-bold mb-4 relative z-10">Data Intelligence & Analytics</h3>
-          <p class="text-on-surface-variant mb-8 relative z-10 leading-relaxed">Transform raw telemetry into actionable
+          <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 relative z-10">Data Intelligence & Analytics</h3>
+          <p class="text-on-surface-variant text-sm md:text-base mb-8 relative z-10 leading-relaxed">Transform raw
+            telemetry into actionable
             strategic insights. We design scalable data pipelines and visualization dashboards that empower data-driven
             executive decision-making.</p>
-          <div
-            class="flex items-center gap-2 text-primary font-bold text-sm relative z-10 group-hover:gap-4 transition-all w-fit cursor-pointer">
-          </div>
         </div>
 
         <!-- 04 Support and Maintenance -->
         <div
-          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
+          class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-8 md:p-10 hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/20 hover:border-primary/40 hover:shadow-2xl hover:-translate-y-1">
           <div
-            class="absolute -top-4 -right-4 p-8 text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
+            class="absolute -top-4 -right-4 p-8 text-6xl md:text-8xl font-headline font-extrabold text-outline-variant/10 group-hover:text-primary/10 transition-colors duration-500">
             04</div>
           <div
-            class="mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
+            class="mb-6 md:mb-8 w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container relative z-10 group-hover:scale-110 transition-transform duration-500">
             <span class="material-symbols-outlined text-2xl" data-icon="support_agent">support_agent</span>
           </div>
-          <h3 class="font-headline text-2xl font-bold mb-4 relative z-10">Support and Maintenance</h3>
-          <p class="text-on-surface-variant mb-8 relative z-10 leading-relaxed">Continuous monitoring, optimization, and
+          <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 relative z-10">Support and Maintenance</h3>
+          <p class="text-on-surface-variant text-sm md:text-base mb-8 relative z-10 leading-relaxed">Continuous
+            monitoring, optimization, and
             legacy system modernization. Our dedicated triage teams ensure 24/7 operational continuity and proactive
             security patching.</p>
-          <div
-            class="flex items-center gap-2 text-primary font-bold text-sm relative z-10 group-hover:gap-4 transition-all w-fit cursor-pointer">
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- What We Deliver Section -->
-  <section class="py-32 px-8 bg-surface-container-lowest relative overflow-hidden">
+  <section class="py-16 md:py-32 px-4 md:px-8 bg-surface-container-lowest relative overflow-hidden">
     <!-- Decorative blurred background blob -->
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        <div class="col-span-12 lg:col-span-5 space-y-8">
-          <h2 class="font-headline text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.2]">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-5 space-y-6 md:space-y-8 text-center lg:text-left">
+          <h2 class="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.2]">
             What We <span class="text-gradient">Deliver</span>
           </h2>
-          <p class="text-on-surface-variant text-lg leading-relaxed">Beyond code, we provide the architectural
+          <p class="text-on-surface-variant text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">Beyond code,
+            we provide the architectural
             foundation for digital dominance. Every delivery is comprehensively audited for security, elite performance,
             and future scalability.</p>
-          <ul class="space-y-4 pt-4">
-            <li class="flex items-center gap-4 text-on-surface font-bold text-sm uppercase tracking-wide">
-              <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"><span
-                  class="material-symbols-outlined text-primary text-sm" data-icon="done">done</span></div>
+          <ul class="space-y-4 pt-4 flex flex-col items-center lg:items-start text-left">
+            <li
+              class="flex items-center gap-4 text-on-surface font-bold text-[10px] md:text-xs uppercase tracking-widest">
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-xs md:text-sm" data-icon="done">done</span>
+              </div>
               Complete Audit Trails
             </li>
-            <li class="flex items-center gap-4 text-on-surface font-bold text-sm uppercase tracking-wide">
-              <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"><span
-                  class="material-symbols-outlined text-primary text-sm" data-icon="done">done</span></div>
+            <li
+              class="flex items-center gap-4 text-on-surface font-bold text-[10px] md:text-xs uppercase tracking-widest">
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-xs md:text-sm" data-icon="done">done</span>
+              </div>
               Zero-Trust Models
             </li>
-            <li class="flex items-center gap-4 text-on-surface font-bold text-sm uppercase tracking-wide">
-              <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"><span
-                  class="material-symbols-outlined text-primary text-sm" data-icon="done">done</span></div>
+            <li
+              class="flex items-center gap-4 text-on-surface font-bold text-[10px] md:text-xs uppercase tracking-widest">
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-xs md:text-sm" data-icon="done">done</span>
+              </div>
               24/7 Guaranteed SLA
             </li>
           </ul>
         </div>
 
-        <div class="col-span-12 lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:pl-12">
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:pl-12">
           <div class="flex flex-col gap-6">
             <!-- Deliverable 1 -->
             <div
-              class="bg-surface p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+              class="bg-surface p-6 md:p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group text-center sm:text-left overflow-hidden">
               <div
-                class="w-14 h-14 rounded-2xl bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
-                <span class="material-symbols-outlined text-2xl" data-icon="schema">schema</span>
+                class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-surface-container-high mx-auto sm:mx-0 group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
+                <span class="material-symbols-outlined text-xl md:text-2xl" data-icon="schema">schema</span>
               </div>
-              <h4 class="font-headline font-bold text-xl mb-3">Scalable Software</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Modular systems that grow gracefully with your
+              <h4 class="font-headline font-bold text-lg md:text-xl mb-3 leading-snug">Scalable Software</h4>
+              <p class="text-on-surface-variant text-xs md:text-sm leading-relaxed">Modular systems that grow gracefully
+                with your
                 user base, preventing technical debt from stalling future innovation cycles.</p>
             </div>
 
             <!-- Deliverable 3 -->
             <div
-              class="bg-surface p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+              class="bg-surface p-6 md:p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group text-center sm:text-left overflow-hidden">
               <div
-                class="w-14 h-14 rounded-2xl bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
-                <span class="material-symbols-outlined text-2xl" data-icon="security">security</span>
+                class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-surface-container-high mx-auto sm:mx-0 group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
+                <span class="material-symbols-outlined text-xl md:text-2xl" data-icon="security">security</span>
               </div>
-              <h4 class="font-headline font-bold text-xl mb-3">Secure Architecture</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Zero-trust security paradigms directly
+              <h4 class="font-headline font-bold text-lg md:text-xl mb-3 leading-snug">Secure Architecture</h4>
+              <p class="text-on-surface-variant text-xs md:text-sm leading-relaxed">Zero-trust security paradigms
+                directly
                 integrated into the core architecture, ensuring pristine data integrity.</p>
             </div>
           </div>
@@ -279,25 +291,28 @@
           <div class="flex flex-col gap-6 sm:mt-12">
             <!-- Deliverable 2 -->
             <div
-              class="bg-surface p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+              class="bg-surface p-6 md:p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group text-center sm:text-left overflow-hidden">
               <div
-                class="w-14 h-14 rounded-2xl bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
-                <span class="material-symbols-outlined text-2xl" data-icon="settings_suggest">settings_suggest</span>
+                class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-surface-container-high mx-auto sm:mx-0 group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
+                <span class="material-symbols-outlined text-xl md:text-2xl"
+                  data-icon="settings_suggest">settings_suggest</span>
               </div>
-              <h4 class="font-headline font-bold text-xl mb-3">Process Optimization</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Automation of repetitive workflows using
+              <h4 class="font-headline font-bold text-lg md:text-xl mb-3 leading-snug">Process Optimization</h4>
+              <p class="text-on-surface-variant text-xs md:text-sm leading-relaxed">Automation of repetitive workflows
+                using
                 AI-driven intelligent agents, significantly reducing operational overhead.</p>
             </div>
 
             <!-- Deliverable 4 -->
             <div
-              class="bg-surface p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+              class="bg-surface p-6 md:p-8 rounded-3xl border border-outline-variant/20 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group text-center sm:text-left overflow-hidden">
               <div
-                class="w-14 h-14 rounded-2xl bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
-                <span class="material-symbols-outlined text-2xl" data-icon="analytics">analytics</span>
+                class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-surface-container-high mx-auto sm:mx-0 group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center mb-6 transition-colors duration-300 shadow-sm">
+                <span class="material-symbols-outlined text-xl md:text-2xl" data-icon="analytics">analytics</span>
               </div>
-              <h4 class="font-headline font-bold text-xl mb-3">Actionable Data</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Real-time deep telemetry and custom reporting
+              <h4 class="font-headline font-bold text-lg md:text-xl mb-3 leading-snug">Actionable Data</h4>
+              <p class="text-on-surface-variant text-xs md:text-sm leading-relaxed">Real-time deep telemetry and custom
+                reporting
                 pipelines that transform raw system data into critical business insights.</p>
             </div>
           </div>
@@ -306,18 +321,20 @@
     </div>
   </section>
   <!-- Visual Anchor Section -->
-  <section class="h-96 w-full relative">
+  <section class="h-[500px] md:h-96 w-full relative">
     <img class="w-full h-full object-cover grayscale opacity-40"
       data-alt="close-up macro shot of a sophisticated high-end computer motherboard with precision gold circuits and architectural beauty"
       src="https://lh3.googleusercontent.com/aida-public/AB6AXuArm7Fe_qamozDKyv-JCyuzOHrew58YIymNHOdim3rUv3MYHLTLnezZNhnyhjIvqFJJG3jTD0mZhvkWUZ_9Bl7O0E1yjKyDnByzkMMRdnK4t63ziWFBjpJBJSeuhBX6tTAtkm6tH9HsEa_SVBIaW3S8XiMWooaq9_CexMsLpuCe3N95WMGSGJ33OXVe4mUwh4cilDMwQhhf5PGfdbRJTGE3CpdOMF5Ew9STeJb3XWL8JrGpaKevH2geTMqG5VwcuchTBxnlslSb3-Hq" />
     <div class="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface-container-low"></div>
     <div class="absolute inset-0 flex items-center justify-center">
-      <div class="text-center px-8">
-        <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tighter mb-4 text-on-surface">Ready to
+      <div class="text-center px-4 md:px-8">
+        <h2 class="font-headline text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter mb-4 text-on-surface">Ready
+          to
           Architect Your Future?</h2>
-        <p class="text-on-surface-variant mb-8 max-w-lg mx-auto">Join the ranks of enterprises powered by Architectural
+        <p class="text-on-surface-variant text-base md:text-lg mb-8 max-w-lg mx-auto">Join the ranks of enterprises
+          powered by Architectural
           Intelligence.</p>
-        <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold shadow-xl shadow-primary/20"
+        <button class="bg-primary text-on-primary px-8 md:px-10 py-4 rounded-full font-bold shadow-xl shadow-primary/20"
           routerLink="/contact">Start a Consultation</button>
       </div>
     </div>
