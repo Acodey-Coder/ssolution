@@ -1,57 +1,69 @@
-<nav
-    class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm dark:shadow-none">
+<nav class="fixed top-0 w-full z-50 nav-glass border-b border-slate-200/40 dark:border-slate-800/50 shadow-sm transition-all duration-300">
+    <!-- Animated gradient bottom border -->
+    <div class="absolute bottom-0 left-0 right-0 h-px" style="background: linear-gradient(90deg, transparent, rgba(82,113,138,0.3), rgba(154,203,255,0.4), rgba(82,113,138,0.3), transparent);"></div>
+
     <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-7xl mx-auto">
         <div class="flex items-center gap-3">
-            <img alt="Smart Solutions Logo" class="h-12 md:h-16 lg:h-20 w-auto object-contain cursor-pointer" src="logo.png"
+            <img alt="Smart Solutions Logo" class="h-12 md:h-16 lg:h-20 w-auto object-contain cursor-pointer transition-all duration-300 hover:scale-105 hover:drop-shadow-lg" src="logo.png"
                 routerLink="/" (click)="closeMenu()" />
         </div>
-        
+
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center gap-8">
-            <a class="font-headline tracking-tight text-sm font-semibold pb-1 border-b-2 transition-all duration-300" 
-                [class.border-slate-800]="router.url === '/'" 
-                [class.dark:border-blue-400]="router.url === '/'"
-                [class.text-slate-800]="router.url === '/'" 
+            <a class="font-headline tracking-tight text-sm font-semibold pb-1 border-b-2 transition-all duration-300 relative group"
+                [class.border-primary]="router.url === '/'"
+                [class.text-on-surface]="router.url === '/'"
                 [class.text-slate-500]="router.url !== '/'"
                 [class.border-transparent]="router.url !== '/'"
-                routerLink="/">Home</a>
-            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-all duration-300 pb-1 border-b-2"
-                [class.border-slate-800]="router.url === '/services'"
-                [class.dark:border-blue-400]="router.url === '/services'"
-                [class.text-slate-800]="router.url === '/services'" 
+                routerLink="/">
+                Home
+                <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-fixed-dim transition-all duration-300 group-hover:w-full" [class.w-full]="router.url === '/'"></span>
+            </a>
+            <a class="font-headline tracking-tight text-sm font-semibold transition-all duration-300 pb-1 border-b-2 relative group"
+                [class.border-primary]="router.url === '/services'"
+                [class.text-on-surface]="router.url === '/services'"
                 [class.text-slate-500]="router.url !== '/services'"
                 [class.border-transparent]="router.url !== '/services'"
-                routerLink="/services">Services</a>
-            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-all duration-300 pb-1 border-b-2"
-                [class.border-slate-800]="router.url === '/portfolio'"
-                [class.dark:border-blue-400]="router.url === '/portfolio'"
-                [class.text-slate-800]="router.url === '/portfolio'" 
+                routerLink="/services">
+                Services
+                <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-fixed-dim transition-all duration-300 group-hover:w-full" [class.w-full]="router.url === '/services'"></span>
+            </a>
+            <a class="font-headline tracking-tight text-sm font-semibold transition-all duration-300 pb-1 border-b-2 relative group"
+                [class.border-primary]="router.url === '/portfolio'"
+                [class.text-on-surface]="router.url === '/portfolio'"
                 [class.text-slate-500]="router.url !== '/portfolio'"
                 [class.border-transparent]="router.url !== '/portfolio'"
-                routerLink="/portfolio">Portfolio</a>
-            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-all duration-300 pb-1 border-b-2"
-                [class.border-slate-800]="router.url === '/about'"
-                [class.dark:border-blue-400]="router.url === '/about'" 
-                [class.text-slate-800]="router.url === '/about'"
-                [class.text-slate-500]="router.url !== '/about'" 
+                routerLink="/portfolio">
+                Portfolio
+                <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-fixed-dim transition-all duration-300 group-hover:w-full" [class.w-full]="router.url === '/portfolio'"></span>
+            </a>
+            <a class="font-headline tracking-tight text-sm font-semibold transition-all duration-300 pb-1 border-b-2 relative group"
+                [class.border-primary]="router.url === '/about'"
+                [class.text-on-surface]="router.url === '/about'"
+                [class.text-slate-500]="router.url !== '/about'"
                 [class.border-transparent]="router.url !== '/about'"
-                routerLink="/about">About Us</a>
-            <a class="font-headline tracking-tight text-sm font-semibold hover:text-slate-800 dark:hover:text-blue-200 transition-all duration-300 pb-1 border-b-2"
-                [class.border-slate-800]="router.url === '/contact'"
-                [class.dark:border-blue-400]="router.url === '/contact'"
-                [class.text-slate-800]="router.url === '/contact'" 
+                routerLink="/about">
+                About Us
+                <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-fixed-dim transition-all duration-300 group-hover:w-full" [class.w-full]="router.url === '/about'"></span>
+            </a>
+            <a class="font-headline tracking-tight text-sm font-semibold transition-all duration-300 pb-1 border-b-2 relative group"
+                [class.border-primary]="router.url === '/contact'"
+                [class.text-on-surface]="router.url === '/contact'"
                 [class.text-slate-500]="router.url !== '/contact'"
                 [class.border-transparent]="router.url !== '/contact'"
-                routerLink="/contact">Contact</a>
+                routerLink="/contact">
+                Contact
+                <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-fixed-dim transition-all duration-300 group-hover:w-full" [class.w-full]="router.url === '/contact'"></span>
+            </a>
         </div>
 
         <div class="flex items-center gap-4">
             <button
-                class="hidden md:block editorial-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-tight shadow-md transition-transform active:scale-95"
+                class="hidden md:block editorial-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-tight shadow-md active:scale-95 btn-glow cta-button"
                 routerLink="/contact" (click)="closeMenu()">
                 Get Started
             </button>
-            
+
             <!-- Mobile Menu Toggle -->
             <button (click)="toggleMenu()" class="lg:hidden p-2 text-slate-600 dark:text-slate-300 focus:outline-none" aria-label="Toggle menu">
                 <span class="material-symbols-outlined text-3xl transition-transform duration-300" [class.rotate-90]="isMenuOpen">
@@ -62,9 +74,9 @@
     </div>
 
     <!-- Full-screen Mobile Navigation Menu -->
-    <div *ngIf="isMenuOpen" 
+    <div *ngIf="isMenuOpen"
         class="lg:hidden fixed top-0 left-0 w-screen h-screen bg-white dark:bg-slate-950 z-[100] flex flex-col overflow-hidden animate-in fade-in slide-in-from-right duration-300">
-        
+
         <!-- Mobile Menu Header -->
         <div class="flex justify-between items-center h-24 px-6 border-b border-slate-100 dark:border-slate-800">
             <div class="flex items-center gap-3">
@@ -76,36 +88,37 @@
         </div>
 
         <!-- Mobile Menu Links -->
-        <div class="flex-1 flex flex-col justify-center p-10 gap-8 bg-white dark:bg-slate-950" (click)="closeMenu()">
-            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-50 dark:border-slate-900 transition-colors" 
+        <div class="flex-1 flex flex-col justify-center p-10 gap-8 hero-gradient-bg relative overflow-hidden" (click)="closeMenu()">
+            <div class="absolute inset-0 dot-grid opacity-20 pointer-events-none"></div>
+            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-100 dark:border-slate-900 transition-all duration-300 hover:translate-x-3 relative z-10"
                 [class.text-primary]="router.url === '/'"
                 [class.text-slate-900]="router.url !== '/'"
                 [class.dark:text-white]="router.url !== '/'"
                 routerLink="/" (click)="closeMenu()">Home</a>
-            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-50 dark:border-slate-900 transition-colors" 
+            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-100 dark:border-slate-900 transition-all duration-300 hover:translate-x-3 relative z-10"
                 [class.text-primary]="router.url === '/services'"
                 [class.text-slate-900]="router.url !== '/services'"
                 [class.dark:text-white]="router.url !== '/services'"
                 routerLink="/services" (click)="closeMenu()">Services</a>
-            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-50 dark:border-slate-900 transition-colors" 
+            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-100 dark:border-slate-900 transition-all duration-300 hover:translate-x-3 relative z-10"
                 [class.text-primary]="router.url === '/portfolio'"
                 [class.text-slate-900]="router.url !== '/portfolio'"
                 [class.dark:text-white]="router.url !== '/portfolio'"
                 routerLink="/portfolio" (click)="closeMenu()">Portfolio</a>
-            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-50 dark:border-slate-900 transition-colors" 
+            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-100 dark:border-slate-900 transition-all duration-300 hover:translate-x-3 relative z-10"
                 [class.text-primary]="router.url === '/about'"
                 [class.text-slate-900]="router.url !== '/about'"
                 [class.dark:text-white]="router.url !== '/about'"
                 routerLink="/about" (click)="closeMenu()">About Us</a>
-            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-50 dark:border-slate-900 transition-colors" 
+            <a class="text-2xl md:text-3xl font-headline font-bold tracking-tight py-3 border-b border-slate-100 dark:border-slate-900 transition-all duration-300 hover:translate-x-3 relative z-10"
                 [class.text-primary]="router.url === '/contact'"
                 [class.text-slate-900]="router.url !== '/contact'"
                 [class.dark:text-white]="router.url !== '/contact'"
                 routerLink="/contact" (click)="closeMenu()">Contact</a>
-            
-            <div class="mt-12">
+
+            <div class="mt-12 relative z-10">
                 <button
-                    class="w-full editorial-gradient text-white px-8 py-4 rounded-2xl font-headline font-bold text-xl tracking-tight shadow-lg active:scale-[0.98] transition-transform"
+                    class="w-full editorial-gradient text-white px-8 py-4 rounded-2xl font-headline font-bold text-xl tracking-tight shadow-lg active:scale-[0.98] btn-glow cta-button"
                     routerLink="/contact" (click)="closeMenu()">
                     Get Started
                 </button>
@@ -113,4 +126,3 @@
         </div>
     </div>
 </nav>
-

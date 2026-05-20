@@ -1,131 +1,119 @@
 <main class="pt-20">
     <!-- Hero Section -->
-    <section class="relative px-8 py-20 md:py-28 overflow-hidden bg-white">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span
-                    class="inline-block bg-primary-container/10 text-primary px-3 py-1 rounded-md text-[10px] font-bold tracking-[0.05em] uppercase mb-6">Our
-                    Work</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+    <section class="relative px-8 py-24 md:py-32 overflow-hidden hero-gradient-bg">
+        <div class="absolute inset-0 grid-lines pointer-events-none"></div>
+        <div class="absolute -top-16 right-0 w-[480px] h-[480px] orb orb-blue pointer-events-none" style="filter:blur(70px); animation-duration:14s; opacity:0.5;"></div>
+        <div class="absolute bottom-0 -left-16 w-80 h-80 orb orb-primary pointer-events-none" style="filter:blur(55px); animation:morph-blob 12s ease-in-out infinite reverse;"></div>
+        <div class="absolute inset-0 dot-grid opacity-20 pointer-events-none"></div>
+        <div class="absolute top-20 right-1/3 w-2 h-2 bg-primary/40 sparkle pointer-events-none" style="border-radius:9999px;"></div>
+        <div class="absolute bottom-24 left-1/4 w-1.5 h-1.5 bg-primary-fixed-dim/60 sparkle pointer-events-none" style="border-radius:9999px; animation-delay:1.8s;"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="animate-fade-in-left">
+                <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-[0.1em] uppercase mb-6 inline-block pill-sweep animate-fade-in-up delay-100">Our Work</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.05] animate-fade-in-up delay-200">
                     Architectural <br />
                     <span class="text-primary">Intelligence</span> in Motion.
                 </h1>
-                <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-body">
+                <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-body animate-fade-in-up delay-300">
                     We partner with startups, enterprises, and growing businesses across the USA and globally to design and deploy scalable AI solutions, software systems, web applications, mobile apps, and ecommerce platforms that improve efficiency, automation, and business growth.
                 </p>
             </div>
-            <div class="relative hidden lg:block">
-                <div
-                    class="aspect-video rounded-xl overflow-hidden shadow-2xl bg-surface-container-high border border-outline-variant/30">
-                    <img alt="Engineering Concept" class="w-full h-full object-cover"
+            <div class="relative hidden lg:block animate-fade-in-right delay-200">
+                <div class="aspect-video rounded-2xl overflow-hidden image-glow" style="transform: perspective(800px) rotateY(-7deg) rotateX(3deg);">
+                    <img alt="Engineering Concept" class="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMt_fB91S52K742FsUFAzpxFToqvbWhV7gs1KZt9Tz6XP5iGOtUCu_k8pF3XLQi6k_2XIXGbDtT7mLDevS533GkpN6TwY5mL5RYgphEwrZhl_tqmD6vb2ScoJRR_Uk1JKJWb73RNOibhtc-xex7AN4iCqWCrXoP-dsIkjW5lbF8KZzlbEhc2sEz-xNaespqkYCJB08ZgIKglnzHvEmVRubOeT1FyODnS48MZSnevs8_4heTlbmxl_qkspgtD5E-lkycRhR0j63C8II" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-800/25 to-transparent"></div>
                 </div>
+                <div class="absolute -bottom-6 -right-6 w-28 h-28 glow-ring animate-spin-slow pointer-events-none"></div>
+                <div class="absolute -bottom-3 -right-3 w-16 h-16 glow-ring animate-spin-slow-rev pointer-events-none"></div>
             </div>
         </div>
     </section>
+
+    <div class="divider-flow"></div>
+
     <!-- Why Our Portfolio Matters -->
-    <section class="px-8 py-16 bg-surface-container-low border-y border-outline-variant/10">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-on-surface mb-6">Why Our Portfolio Matters</h2>
-            <p class="text-lg text-on-surface-variant max-w-3xl mx-auto font-body">
+    <section class="px-8 py-16 bg-surface-container-low relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center animate-fade-in-up relative z-10">
+            <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 inline-block">Why It Matters</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold heading-gradient mb-6">Why Our Portfolio Matters</h2>
+            <p class="text-lg text-on-surface-variant max-w-3xl mx-auto font-body leading-relaxed">
                 Our portfolio reflects scalable, business-focused AI and software development solutions designed to help organizations innovate, automate operations, and scale with confidence.
             </p>
         </div>
     </section>
+
+    <div class="divider-flow"></div>
+
     <!-- Portfolio Projects -->
-    <section class="px-8 py-24">
-        <div class="max-w-7xl mx-auto space-y-24">
+    <section class="px-8 py-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-mesh pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto space-y-28 relative z-10">
             <!-- Project 1 -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1">
-                    <h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 01</h3>
-                    <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">Advanced AI Chatbot for Smart Vendor
-                        Search</h2>
+                <div class="order-2 lg:order-1 animate-fade-in-left">
+                    <span class="text-xs font-extrabold stat-gradient uppercase tracking-[0.2em] mb-3 block">Project 01</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">Advanced AI Chatbot for Smart Vendor Search</h2>
                     <div class="space-y-6">
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
-                            <p class="text-on-surface-variant"> Sponsors faced delays in finding and evaluating suitable
-                                vendors due to manual searches, fragmented data, and slow assessment workflows</p>
+                            <p class="text-on-surface-variant">Sponsors faced delays in finding and evaluating suitable vendors due to manual searches, fragmented data, and slow assessment workflows</p>
                         </div>
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
                             <p class="text-on-surface-variant">Developed an AI-powered vendor search platform that enables Sponsors to ask discovery questions in natural language and instantly find relevant Vendors based on service capabilities, therapeutic experience, GxP compliance, and overall business fit.</p>
                         </div>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Python</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">SQL</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">AI/NLP
-                                Models</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">Python</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">React</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">SQL</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">AI/NLP Models</span>
                         </div>
-                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+                        <div class="glass-enhanced p-6 rounded-2xl border border-primary/10 animate-border-glow">
                             <h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Reduced vendor discovery and shortlisting time significantly</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Improved accuracy in matching Sponsors with relevant Vendors</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Enabled faster vendor assessment through AI-powered search and compliance visibility
-                                </li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Reduced vendor discovery and shortlisting time significantly</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Improved accuracy in matching Sponsors with relevant Vendors</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Enabled faster vendor assessment through AI-powered search and compliance visibility</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
-                    <img alt="Data Intelligence Visualization" class="w-full h-full object-cover"
+                <div class="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-lg aspect-[4/3] animate-fade-in-right image-glow card-3d">
+                    <img alt="Data Intelligence Visualization" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_KHQLMncPkH-bNZ1xMTRBafdOpnna6MnNoH4mBqbWq4dmleqSBePFl5sf9qyHYqRN8jqP5vCmkHBwQdue92Op2-jDGh1FOsnP3EBf0VROdqIYVBriTdKrQYLTlhDYLnqwlaLXky2kgAohVbtVJwzTF0R8H45HtL-eaPPQcvQ8oQ4JSxiTLBJRB4q0PVZKdr_GNatphSLC9B7Svaj_ZWRyk-Yyv9f9KOotxYCWr3VF3Rseitgae2W-gewsG5FL6vohdQxuxUGBeRvA" />
                 </div>
             </div>
             <!-- Project 2 -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="rounded-xl overflow-hidden shadow-lg aspect-[4/3] order-1">
-                    <img alt="Secure Web Application" class="w-full h-full object-cover"
+                <div class="rounded-2xl overflow-hidden shadow-lg aspect-[4/3] order-1 animate-fade-in-left image-glow card-3d-left">
+                    <img alt="Secure Web Application" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZEtGV-gniuCHuqPYX7Z-3r9vIQHW7hRjYRwGfa9CcPNvBy0YjvGz55Jj0WQb3eAXT9owZHoVZYcC4-5fzUBVi6ioZwQIRDNVuQ4eizmMBvPEYAuVYzf0GVzjoj3vQwLuzpGrwr3KJSBREc2FxEwPqNVxL4FTh3yHsroimxm5q2ldnkJ4BXgmXeZSfBgDdRvDb3nc3lNff6PjTtFATZnUiEEvJSZmSPU7-tPxwvTaL87bNYwLqxdDFxvW_7lFgKzfajIEDJ3Qdu1Tk" />
                 </div>
-                <div class="order-2">
-                    <h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 02</h3>
+                <div class="order-2 animate-fade-in-right">
+                    <span class="text-xs font-extrabold stat-gradient uppercase tracking-[0.2em] mb-3 block">Project 02</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">Custom Web Application</h2>
                     <div class="space-y-6">
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
-                            <p class="text-on-surface-variant">Sponsors faced challenges in managing the complete vendor
-                                lifecycle
-                                due to fragmented systems, manual qualification processes, compliance risks, and delays
-                                in
-                                vendor assessment and monitoring.</p>
+                            <p class="text-on-surface-variant">Sponsors faced challenges in managing the complete vendor lifecycle due to fragmented systems, manual qualification processes, compliance risks, and delays in vendor assessment and monitoring.</p>
                         </div>
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
                             <p class="text-on-surface-variant">Developed a custom web and mobile application that centralizes vendor discovery, evaluation, risk assessment, qualification, and ongoing monitoring in one platform.</p>
                         </div>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">.NET Core</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">MySQL</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">React</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">.NET Core</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">MySQL</span>
                         </div>
-                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+                        <div class="glass-enhanced p-6 rounded-2xl border border-primary/10 animate-border-glow">
                             <h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Reduced vendor qualification and onboarding time through workflow automation and centralized data access</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Improved compliance visibility with real-time risk dashboards and monitoring</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Enabled faster, risk-based decision-making across procurement and operations teams</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Reduced vendor qualification and onboarding time through workflow automation</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Improved compliance visibility with real-time risk dashboards</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Enabled faster, risk-based decision-making across procurement and operations teams</li>
                             </ul>
                         </div>
                     </div>
@@ -133,99 +121,68 @@
             </div>
             <!-- Project 3 -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1">
-                    <h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 03</h3>
+                <div class="order-2 lg:order-1 animate-fade-in-left">
+                    <span class="text-xs font-extrabold stat-gradient uppercase tracking-[0.2em] mb-3 block">Project 03</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">E-commerce Platform</h2>
                     <div class="space-y-6">
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
-                            <p class="text-on-surface-variant">Sponsors and procurement teams faced difficulties in
-                                quickly accessing
-                                vendor audit reports, RFIs, and qualification documents due to scattered data sources
-                                and
-                                manual request processes.</p>
+                            <p class="text-on-surface-variant">Sponsors and procurement teams faced difficulties in quickly accessing vendor audit reports, RFIs, and qualification documents due to scattered data sources and manual request processes.</p>
                         </div>
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
                             <p class="text-on-surface-variant">Developed a custom ecommerce web platform that provides a centralized library of qualified vendors, allowing users to search, filter, review, and request audit reports and RFIs efficiently.</p>
                         </div>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">MySQL</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React.js</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Node.js</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">MySQL</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">React.js</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">Node.js</span>
                         </div>
-                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+                        <div class="glass-enhanced p-6 rounded-2xl border border-primary/10 animate-border-glow">
                             <h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Reduced time to access vendor audit reports and RFIs through centralized search and filtering</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Streamlined document procurement with cart-based request workflows</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Improved efficiency in vendor qualification and assessment processes
-                                </li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Reduced time to access vendor audit reports and RFIs</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Streamlined document procurement with cart-based request workflows</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Improved efficiency in vendor qualification and assessment processes</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
-                    <img alt="E-commerce Architecture" class="w-full h-full object-cover"
+                <div class="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-lg aspect-[4/3] animate-fade-in-right image-glow card-3d">
+                    <img alt="E-commerce Architecture" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfDCYGsfCvBKM1QVaRdBDouHnzouC9xEW0hDjJc7Q9mTRgUr9Qos_5KNCI5TGsbCoPFq7HewtssGqWduGcpIkms0rpX9-UII01sLB6IaqRN4hh5l3-MRRALd7-WF9wWUATl62mrydzbylSFW56lMUDIdVucypev6X-01cny3DLnIyJyLYHt-jcBL2ZKft2M0IPzKuagHrHioSLPIQERyecTQDnW5VUcoAX3iuPfjOjMWkvhsAbbnS4qfX8YKCmsfPF9nxbumH8R2zp" />
                 </div>
             </div>
             <!-- Project 4 -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="rounded-xl overflow-hidden shadow-lg aspect-[4/3] order-1">
-                    <img alt="Secure Web Application" class="w-full h-full object-cover"
+                <div class="rounded-2xl overflow-hidden shadow-lg aspect-[4/3] order-1 animate-fade-in-left image-glow card-3d-left">
+                    <img alt="Secure Web Application" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         src="https://trustcloud.tech/wp-content/uploads/compliance_EN_header.jpeg" />
                 </div>
-                <div class="order-2">
-                    <h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3">Project 04</h3>
+                <div class="order-2 animate-fade-in-right">
+                    <span class="text-xs font-extrabold stat-gradient uppercase tracking-[0.2em] mb-3 block">Project 04</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6">Compliance Engine</h2>
                     <div class="space-y-6">
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Problem</h4>
-                            <p class="text-on-surface-variant">Organizations faced challenges in managing regulatory
-                                compliance, risk
-                                monitoring, and audit readiness due to manual workflows and fragmented compliance data.
-                            </p>
+                            <p class="text-on-surface-variant">Organizations faced challenges in managing regulatory compliance, risk monitoring, and audit readiness due to manual workflows and fragmented compliance data.</p>
                         </div>
-                        <div>
+                        <div class="accent-left">
                             <h4 class="text-sm font-bold text-on-surface uppercase mb-2">Solution</h4>
-                            <p class="text-on-surface-variant">Developed a custom Compliance Engine that automates
-                                compliance
-                                checks, centralizes risk and audit data, and provides real-time monitoring dashboards
-                                for
-                                faster, regulation-ready decision-making.</p>
+                            <p class="text-on-surface-variant">Developed a custom Compliance Engine that automates compliance checks, centralizes risk and audit data, and provides real-time monitoring dashboards for faster, regulation-ready decision-making.</p>
                         </div>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">React</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">Node.js</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">PostgreSQL</span>
-                            <span
-                                class="bg-surface-container-high px-3 py-1 rounded-md text-xs font-semibold text-on-surface-variant">AWS</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">React</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">Node.js</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">PostgreSQL</span>
+                            <span class="gradient-badge px-3 py-1 rounded-md text-xs font-semibold hover:bg-primary hover:text-on-primary transition-colors cursor-default">AWS</span>
                         </div>
-                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+                        <div class="glass-enhanced p-6 rounded-2xl border border-primary/10 animate-border-glow">
                             <h4 class="text-sm font-bold text-primary uppercase mb-3">Outcomes</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-on-surface">
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Reduced manual compliance efforts through workflow automation</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Improved audit readiness and risk visibility</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                    Enabled faster compliance and quality management decisions</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Reduced manual compliance efforts through workflow automation</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Improved audit readiness and risk visibility</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>Enabled faster compliance and quality management decisions</li>
                             </ul>
                         </div>
                     </div>
@@ -233,230 +190,149 @@
             </div>
         </div>
     </section>
+
+    <div class="divider-flow"></div>
+
     <!-- Key Capabilities Demonstrated -->
-    <section class="px-8 py-24 bg-surface-container">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-16 text-center">
-                <h2 class="text-3xl font-bold text-on-surface mb-4">Key Capabilities Demonstrated</h2>
+    <section class="px-8 py-28 bg-surface-container relative overflow-hidden section-gradient-alt">
+        <div class="absolute top-0 right-1/4 w-72 h-72 orb orb-blue opacity-25 pointer-events-none" style="filter:blur(55px);"></div>
+        <div class="absolute inset-0 bg-mesh pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="mb-16 text-center animate-fade-in-up">
+                <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 inline-block">Engineering Excellence</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold heading-gradient mb-4">Key Capabilities Demonstrated</h2>
                 <p class="text-on-surface-variant max-w-2xl mx-auto">The engineering principles and software development expertise behind every Smart Solutions delivery.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
-                    <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
-                        <span class="material-symbols-outlined text-primary">analytics</span>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-children">
+                <div class="glass-enhanced p-8 rounded-2xl border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up hover-glow-card">
+                    <div class="w-12 h-12 icon-gradient-bg flex items-center justify-center rounded-2xl mb-6 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined text-primary">analytics</span></div>
                     <h3 class="text-xl font-bold mb-3">Real-time Data Processing</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">Scalable systems designed to process large-scale business data with high performance and low latency.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
-                    <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
-                        <span class="material-symbols-outlined text-primary">security</span>
-                    </div>
+                <div class="glass-enhanced p-8 rounded-2xl border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up hover-glow-card">
+                    <div class="w-12 h-12 icon-gradient-bg flex items-center justify-center rounded-2xl mb-6 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined text-primary">security</span></div>
                     <h3 class="text-xl font-bold mb-3">Enterprise-grade Security</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">Secure software architecture and enterprise-grade security standards designed to protect critical business systems and data.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
-                    <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
-                        <span class="material-symbols-outlined text-primary">cloud_sync</span>
-                    </div>
+                <div class="glass-enhanced p-8 rounded-2xl border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up hover-glow-card">
+                    <div class="w-12 h-12 icon-gradient-bg flex items-center justify-center rounded-2xl mb-6 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined text-primary">cloud_sync</span></div>
                     <h3 class="text-xl font-bold mb-3">Cloud-Native Scalability</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">Cloud-ready infrastructure designed for scalability, flexibility, and long-term digital growth.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
-                    <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
-                        <span class="material-symbols-outlined text-primary">psychology</span>
-                    </div>
+                <div class="glass-enhanced p-8 rounded-2xl border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up hover-glow-card">
+                    <div class="w-12 h-12 icon-gradient-bg flex items-center justify-center rounded-2xl mb-6 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined text-primary">psychology</span></div>
                     <h3 class="text-xl font-bold mb-3">AI Solution Development</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">Custom AI development solutions designed to automate workflows, improve efficiency, and reduce operational costs.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
-                    <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
-                        <span class="material-symbols-outlined text-primary">web</span>
-                    </div>
+                <div class="glass-enhanced p-8 rounded-2xl border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up hover-glow-card">
+                    <div class="w-12 h-12 icon-gradient-bg flex items-center justify-center rounded-2xl mb-6 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined text-primary">web</span></div>
                     <h3 class="text-xl font-bold mb-3">Web Application Architecture</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">Scalable and secure web application development optimized for performance, usability, and business growth.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm">
-                    <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6">
-                        <span class="material-symbols-outlined text-primary">smartphone</span>
-                    </div>
+                <div class="glass-enhanced p-8 rounded-2xl border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up hover-glow-card">
+                    <div class="w-12 h-12 icon-gradient-bg flex items-center justify-center rounded-2xl mb-6 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined text-primary">smartphone</span></div>
                     <h3 class="text-xl font-bold mb-3">Mobile App Development</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">High-performance mobile app development solutions with seamless user experience across iOS and Android platforms.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="divider-flow"></div>
+
     <!-- Key Takeaways Section -->
-    <section class="px-8 py-20 bg-white">
-        <div class="max-w-5xl mx-auto">
-            <div class="bg-inverse-surface text-white p-10 md:p-16 rounded-2xl relative overflow-hidden">
-                <div
-                    class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
-                </div>
-                <h2 class="text-3xl font-bold mb-10 relative z-10">Key Takeaways</h2>
+    <section class="px-8 py-24 bg-surface relative overflow-hidden">
+        <div class="absolute inset-0 bg-mesh pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="bg-inverse-surface text-white p-10 md:p-16 rounded-2xl relative overflow-hidden card-3d-up animate-fade-in-up" style="box-shadow: 0 25px 70px rgba(18,28,40,0.3);">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl animate-float-slow pointer-events-none"></div>
+                <div class="absolute inset-0 grid-lines opacity-20 pointer-events-none"></div>
+                <h2 class="text-3xl font-bold mb-10 relative z-10 heading-gradient" style="-webkit-text-fill-color: white; background: none;">Key Takeaways</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
-                    <div class="flex gap-4">
-                        <span class="text-primary-fixed-dim text-2xl font-black">01</span>
-                        <div>
-                            <h4 class="font-bold mb-2">Strategy First</h4>
-                            <p class="text-sm">We define business goals and technology strategy before selecting the right software and AI solutions.</p>
-                        </div>
+                    <div class="flex gap-4 group hover:-translate-y-1 transition-transform duration-300">
+                        <span class="text-2xl font-black stat-gradient group-hover:scale-110 transition-transform duration-300 inline-block shrink-0">01</span>
+                        <div><h4 class="font-bold mb-2">Strategy First</h4><p class="text-sm opacity-80">We define business goals and technology strategy before selecting the right software and AI solutions.</p></div>
                     </div>
-                    <div class="flex gap-4">
-                        <span class="text-primary-fixed-dim text-2xl font-black">02</span>
-                        <div>
-                            <h4 class="font-bold mb-2">Technical Rigor</h4>
-                            <p class="text-sm">Our systems are engineered for scalability, security, reliability, and enterprise performance.</p>
-                        </div>
+                    <div class="flex gap-4 group hover:-translate-y-1 transition-transform duration-300">
+                        <span class="text-2xl font-black stat-gradient group-hover:scale-110 transition-transform duration-300 inline-block shrink-0">02</span>
+                        <div><h4 class="font-bold mb-2">Technical Rigor</h4><p class="text-sm opacity-80">Our systems are engineered for scalability, security, reliability, and enterprise performance.</p></div>
                     </div>
-                    <div class="flex gap-4">
-                        <span class="text-primary-fixed-dim text-2xl font-black">03</span>
-                        <div>
-                            <h4 class="font-bold mb-2">User Centric</h4>
-                            <p class="text-sm">We combine advanced technology with intuitive, high-performance user experiences.</p>
-                        </div>
+                    <div class="flex gap-4 group hover:-translate-y-1 transition-transform duration-300">
+                        <span class="text-2xl font-black stat-gradient group-hover:scale-110 transition-transform duration-300 inline-block shrink-0">03</span>
+                        <div><h4 class="font-bold mb-2">User Centric</h4><p class="text-sm opacity-80">We combine advanced technology with intuitive, high-performance user experiences.</p></div>
                     </div>
-                    <div class="flex gap-4">
-                        <span class="text-primary-fixed-dim text-2xl font-black">04</span>
-                        <div>
-                            <h4 class="font-bold mb-2">Scalable Foundation</h4>
-                            <p class="text-sm">Our software architecture is designed to scale from startup MVPs to enterprise-level digital platforms.</p>
-                        </div>
+                    <div class="flex gap-4 group hover:-translate-y-1 transition-transform duration-300">
+                        <span class="text-2xl font-black stat-gradient group-hover:scale-110 transition-transform duration-300 inline-block shrink-0">04</span>
+                        <div><h4 class="font-bold mb-2">Scalable Foundation</h4><p class="text-sm opacity-80">Our software architecture is designed to scale from startup MVPs to enterprise-level digital platforms.</p></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="divider-flow"></div>
+
     <!-- Testimonials -->
-    <section class="px-8 py-24 bg-surface-container-low overflow-hidden">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-on-surface mb-4">Our Clients</h2>
+    <section class="px-8 py-28 bg-surface-container-low overflow-hidden relative">
+        <div class="absolute inset-0 bg-mesh pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 inline-block">Client Stories</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold heading-gradient">Our Clients</h2>
             </div>
-
             <style>
-                @keyframes scroll-logos {
-                    0% {
-                        transform: translateX(0);
-                    }
-
-                    100% {
-                        transform: translateX(-50%);
-                    }
-                }
-
-                .animate-scroll-logos {
-                    animation: scroll-logos 25s linear infinite;
-                }
+                @keyframes scroll-logos { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+                .animate-scroll-logos { animation: scroll-logos 25s linear infinite; }
             </style>
             <!-- Client Logos Slider -->
             <div class="relative w-full overflow-hidden flex items-center h-40 mb-16">
-                <!-- Left gradient fade -->
-                <div
-                    class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-surface-container-low to-transparent z-10 pointer-events-none">
-                </div>
-                <!-- Right gradient fade -->
-                <div
-                    class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-surface-container-low to-transparent z-10 pointer-events-none">
-                </div>
-
-                <div
-                    class="flex animate-scroll-logos whitespace-nowrap min-w-max hover:[animation-play-state:paused] py-4">
-                    <!-- First set of logos -->
+                <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-surface-container-low to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-surface-container-low to-transparent z-10 pointer-events-none"></div>
+                <div class="flex animate-scroll-logos whitespace-nowrap min-w-max hover:[animation-play-state:paused] py-4">
                     <div class="flex items-center justify-around w-max gap-8 px-4">
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/Avoca_logo.png" alt="Avoca"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/SP_logo.png" alt="SPV"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/Zaptitude_logo.png" alt="Zap.me"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/SellLabs_Logo.png" alt="Adobe Express"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/diligent_logo.png" alt="Client Logo"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/Avoca_logo.png" alt="Avoca" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/SP_logo.png" alt="SPV" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/Zaptitude_logo.png" alt="Zap.me" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/SellLabs_Logo.png" alt="Adobe Express" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/diligent_logo.png" alt="Client Logo" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
                     </div>
-                    <!-- Duplicate set for seamless looping -->
                     <div class="flex items-center justify-around w-max gap-8 px-4">
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/Avoca_logo.png" alt="Avoca"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/SP_logo.png" alt="SPV"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/Zaptitude_logo.png" alt="Zap.me"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/SellLabs_Logo.png" alt="Adobe Express"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
-                        <div
-                            class="h-24 w-48 bg-white rounded-xl shadow-sm border border-white/10 flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md hover:border-white/30 group">
-                            <img src="/diligent_logo.png" alt="Client Logo"
-                                class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110">
-                        </div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/Avoca_logo.png" alt="Avoca" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/SP_logo.png" alt="SPV" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/Zaptitude_logo.png" alt="Zap.me" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/SellLabs_Logo.png" alt="Adobe Express" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
+                        <div class="h-24 w-48 glass-enhanced rounded-xl shadow-sm flex items-center justify-center p-6 transition-all duration-300 hover:shadow-md group card-3d-up"><img src="/diligent_logo.png" alt="Client Logo" class="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-md brightness-110"></div>
                     </div>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div
-                    class="bg-white p-10 rounded-xl shadow-sm italic text-on-surface-variant border border-outline-variant/10">
-                    "Smart Solutions transformed our data chaos into a strategic asset. The AI implementation was
-                    seamless and the results were immediate."
+                <div class="glass-enhanced p-10 rounded-2xl border border-outline-variant/10 card-3d animate-fade-in-left hover-glow-card quote-card">
+                    <p class="italic text-on-surface-variant leading-relaxed mt-6">"Smart Solutions transformed our data chaos into a strategic asset. The AI implementation was seamless and the results were immediate."</p>
                     <div class="mt-6 not-italic font-bold text-on-surface">— CTO, Avoca Group</div>
                 </div>
-                <div
-                    class="bg-white p-10 rounded-xl shadow-sm italic text-on-surface-variant border border-outline-variant/10">
-                    "The level of technical expertise and architectural foresight they brought to our e-commerce project
-                    was world-class. Highly recommended."
+                <div class="glass-enhanced p-10 rounded-2xl border border-outline-variant/10 card-3d-left animate-fade-in-right hover-glow-card quote-card">
+                    <p class="italic text-on-surface-variant leading-relaxed mt-6">"The level of technical expertise and architectural foresight they brought to our e-commerce project was world-class. Highly recommended."</p>
                     <div class="mt-6 not-italic font-bold text-on-surface">— Product Director, Zaptitude</div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Call to Action -->
-    <section class="px-8 py-24 bg-white">
-        <div
-            class="max-w-7xl mx-auto bg-primary rounded-2xl p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-on-primary mb-8 relative z-10">Start Your Digital
-                Transformation</h2>
-            <p class="text-primary-fixed/80 text-lg mb-10 max-w-2xl mx-auto relative z-10">
-                Ready to build the future of your industry? Let's discuss how our architectural intelligence can
-                optimize your operations.
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
-                <button
-                    class="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-fixed transition-colors"
-                    routerLink="/contact">
-                    Book a Strategic Audit
-                </button>
-                <button
-                    class="bg-transparent border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
-                    Download Company Profile
-                </button>
+    <section class="px-8 py-28 relative overflow-hidden">
+        <div class="absolute inset-0 hero-gradient-bg"></div>
+        <div class="absolute inset-0 grid-lines opacity-50 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="bg-primary rounded-2xl p-12 md:p-20 text-center relative overflow-hidden animate-fade-in-up" style="background: linear-gradient(135deg, #52718a 0%, #4a5a6a 100%); box-shadow: 0 30px 80px rgba(82,113,138,0.4);">
+                <div class="absolute top-0 left-0 w-80 h-80 bg-white/5 orb pointer-events-none" style="filter:blur(45px); animation:morph-blob 10s infinite;"></div>
+                <div class="absolute bottom-0 right-0 w-64 h-64 bg-white/4 orb pointer-events-none" style="filter:blur(40px); animation:morph-blob 14s infinite reverse;"></div>
+                <div class="absolute inset-0 grid-lines opacity-20 pointer-events-none"></div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-on-primary mb-8 relative z-10">Start Your Digital Transformation</h2>
+                <p class="text-primary-fixed/80 text-lg mb-10 max-w-2xl mx-auto relative z-10">Ready to build the future of your industry? Let's discuss how our architectural intelligence can optimize your operations.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
+                    <button class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-fixed transition-colors btn-glow cta-button" routerLink="/contact">Book a Strategic Audit</button>
+                    <button class="bg-transparent border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors btn-outline-glow" style="border-color: rgba(255,255,255,0.3);">Download Company Profile</button>
+                </div>
             </div>
         </div>
     </section>

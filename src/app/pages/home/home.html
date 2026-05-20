@@ -1,176 +1,221 @@
 <main class="pt-20">
     <!-- Hero Section -->
-    <section class="relative min-h-[850px] flex items-center overflow-hidden bg-surface">
-        <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section class="relative min-h-[900px] flex items-center overflow-hidden bg-surface hero-gradient-bg">
+        <!-- Grid lines -->
+        <div class="absolute inset-0 grid-lines opacity-100 pointer-events-none"></div>
+        <!-- Animated morphing orbs -->
+        <div class="absolute -top-16 -left-24 w-[500px] h-[500px] orb orb-primary pointer-events-none" style="animation-duration: 14s; filter: blur(70px);"></div>
+        <div class="absolute -bottom-32 -right-16 w-[600px] h-[600px] orb orb-accent pointer-events-none" style="animation: morph-blob 18s ease-in-out infinite reverse; filter: blur(80px); opacity:0.5;"></div>
+        <div class="absolute top-1/3 right-1/4 w-52 h-52 orb orb-dim pointer-events-none" style="filter: blur(30px); animation-duration: 9s; opacity:0.7;"></div>
+        <!-- Dot grid overlay -->
+        <div class="absolute inset-0 dot-grid opacity-30 pointer-events-none"></div>
+        <!-- Sparkle decorations -->
+        <div class="absolute top-32 left-1/4 w-2 h-2 bg-primary/40 sparkle pointer-events-none" style="animation-delay: 0s;" style="border-radius:9999px;"></div>
+        <div class="absolute top-52 right-1/3 w-1.5 h-1.5 bg-primary-fixed-dim/60 sparkle pointer-events-none" style="animation-delay: 1s; border-radius:9999px;"></div>
+        <div class="absolute bottom-32 left-1/3 w-2 h-2 bg-primary/30 sparkle pointer-events-none" style="animation-delay: 2s; border-radius:9999px;"></div>
+
+        <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
             <div class="lg:col-span-7 z-10">
                 <span
-                    class="inline-block bg-secondary-container text-on-secondary-fixed-variant px-4 py-1 rounded-full text-[10px] font-bold tracking-[0.05em] uppercase mb-6 font-label">
+                    class="inline-flex items-center gap-2 gradient-badge px-4 py-1.5 rounded-full text-[10px] font-bold tracking-[0.1em] uppercase mb-7 font-label pill-sweep">
+                    <span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse-ring" style="border-radius:9999px;"></span>
                     Innovation &amp; Technology
                 </span>
                 <h1
-                    class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
-                    AI Development Company USA <span class="text-primary italic">Web, Mobile </span> &amp; ECommerce
+                    class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.05] mb-8 animate-fade-in-up delay-200">
+                    AI Development Company USA <span class="text-primary italic">Web, Mobile</span> &amp; ECommerce
                     Solutions
                 </h1>
-                <p class="text-secondary text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                <p class="text-secondary text-lg md:text-xl max-w-xl mb-10 leading-relaxed animate-fade-in-up delay-300">
                     Smart Solutions helps startups, small businesses, and enterprises build scalable AI solutions, custom software, high-performance websites, mobile apps, and ecommerce platforms that drive growth, automate operations, and increase efficiency across the USA and globally.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-400">
                     <button
-                        class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight shadow-lg hover:shadow-xl transition-all"
+                        class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight shadow-lg transition-all btn-glow cta-button"
                         routerLink="/contact">
                         Initiate Project
                     </button>
                     <button
-                        class="border border-outline-variant/40 text-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight hover:bg-surface-container-low transition-all"
+                        class="text-primary px-8 py-4 rounded-xl font-headline font-bold text-base tracking-tight transition-all btn-outline-glow"
                         routerLink="/portfolio">
                         View Portfolio
                     </button>
                 </div>
+                <!-- Trust indicators -->
+                <div class="flex items-center gap-6 mt-10 animate-fade-in-up delay-500">
+                    <div class="flex flex-col">
+                        <span class="font-headline text-2xl font-extrabold stat-gradient">99.9%</span>
+                        <span class="text-xs text-secondary uppercase tracking-widest">Uptime</span>
+                    </div>
+                    <div class="w-px h-10 bg-outline-variant/30"></div>
+                    <div class="flex flex-col">
+                        <span class="font-headline text-2xl font-extrabold stat-gradient">&lt;100ms</span>
+                        <span class="text-xs text-secondary uppercase tracking-widest">Latency</span>
+                    </div>
+                    <div class="w-px h-10 bg-outline-variant/30"></div>
+                    <div class="flex flex-col">
+                        <span class="font-headline text-2xl font-extrabold stat-gradient">50+</span>
+                        <span class="text-xs text-secondary uppercase tracking-widest">Projects</span>
+                    </div>
+                </div>
             </div>
-            <div class="lg:col-span-5 relative h-full min-h-[400px]">
-                <div class="absolute inset-0 bg-surface-container-high rounded-3xl overflow-hidden shadow-2xl">
-                    <img alt="intelligent technology visualization" class="w-full h-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBSdzkBD_npJd7XZlnZd7uQ1nuLOHmyEW7sgqvTqmQcma4wFYF73YFwjLdF7TI6PUMPHqTJ-puJ7egEnZUrjwGhBwTBqTbPkcBlda8uBBZtgWnJldEfFNjTD0iNynP4YnyH9C9DzsPPW_LNHkXa-O-_KHQkDovqpinwT0pQ5-Ra_rs1Kmd8mDAbGE-oQ8LDyWYuDV8tsEk0aSlYKb8DmGeK0e4_O0VgvpYXsXJVDSk6rVvgDXSn6376Y7ZHjzosk2Iag_MVRUF5Lf5" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-600/20 to-transparent"></div>
+            <div class="lg:col-span-5 relative h-full min-h-[450px] animate-fade-in-right delay-300">
+                <div class="absolute inset-0 rounded-3xl overflow-hidden image-glow" style="transform: perspective(900px) rotateY(-6deg) rotateX(3deg); transition: transform 0.6s ease;">
+                    <!-- Glowing border ring -->
+                    <div class="absolute -inset-0.5 rounded-3xl bg-gradient-to-br from-primary/30 via-primary-fixed-dim/20 to-transparent animate-gradient z-0" style="background-size: 200% 200%;"></div>
+                    <div class="absolute inset-0 bg-surface-container-high rounded-3xl overflow-hidden z-10">
+                        <img alt="intelligent technology visualization" class="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBSdzkBD_npJd7XZlnZd7uQ1nuLOHmyEW7sgqvTqmQcma4wFYF73YFwjLdF7TI6PUMPHqTJ-puJ7egEnZUrjwGhBwTBqTbPkcBlda8uBBZtgWnJldEfFNjTD0iNynP4YnyH9C9DzsPPW_LNHkXa-O-_KHQkDovqpinwT0pQ5-Ra_rs1Kmd8mDAbGE-oQ8LDyWYuDV8tsEk0aSlYKb8DmGeK0e4_O0VgvpYXsXJVDSk6rVvgDXSn6376Y7ZHjzosk2Iag_MVRUF5Lf5" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-700/30 via-transparent to-transparent"></div>
+                    </div>
                 </div>
                 <!-- Floating Data Card -->
-                <div
-                    class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-[0_20px_40px_rgba(18,28,40,0.06)] border border-outline-variant/10 max-w-[240px]">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-symbols-outlined text-primary"
-                            style="font-variation-settings: 'FILL' 1;">bolt</span>
-                        <span
-                            class="text-[10px] font-bold font-label uppercase tracking-wider text-secondary">Efficiency
-                            Boost</span>
+                <div class="absolute -bottom-8 -left-8 glass-enhanced p-6 rounded-2xl max-w-[250px] float-badge z-20">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-xl icon-gradient-bg flex items-center justify-center transition-all duration-300">
+                            <span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                        </div>
+                        <span class="text-[10px] font-bold font-label uppercase tracking-wider text-secondary">Efficiency Boost</span>
                     </div>
-                    <div class="text-2xl font-bold font-headline text-on-surface">99.9%</div>
-                    <div class="text-[11px] text-on-surface-variant font-body">System reliability for mission-critical
-                        digital infrastructure.</div>
+                    <div class="text-2xl font-extrabold font-headline stat-gradient">99.9%</div>
+                    <div class="text-[11px] text-on-surface-variant font-body mt-1">System reliability for mission-critical digital infrastructure.</div>
                 </div>
+                <!-- Decorative spinning rings -->
+                <div class="absolute -top-8 -right-8 w-32 h-32 glow-ring animate-spin-slow pointer-events-none"></div>
+                <div class="absolute -top-4 -right-4 w-20 h-20 glow-ring animate-spin-slow-rev pointer-events-none"></div>
             </div>
         </div>
     </section>
+
+    <!-- Animated divider -->
+    <div class="divider-flow"></div>
+
     <!-- Core Services -->
-    <section class="py-24 bg-surface-container-low">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="mb-16 text-center max-w-2xl mx-auto">
-                <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-4">Core Services</h2>
-                <p class="text-secondary font-body">End-to-end AI, software, web, mobile, and ecommerce development services tailored for startups, small businesses, and enterprises across the USA.</p>
+    <section class="py-28 bg-surface-container-low relative overflow-hidden section-gradient-alt">
+        <div class="absolute top-20 right-0 w-72 h-72 orb orb-blue opacity-40 pointer-events-none" style="filter:blur(55px); animation-delay:-3s;"></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="mb-16 text-center max-w-2xl mx-auto animate-fade-in-up">
+                <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 inline-block">What We Do</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-4 heading-gradient">Core Services</h2>
+                <p class="text-secondary font-body text-lg">End-to-end AI, software, web, mobile, and ecommerce development services tailored for startups, small businesses, and enterprises across the USA.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <!-- Service 1: IT Consulting -->
-                <div
-                    class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 block"
-                        style="font-variation-settings: 'FILL' 0;">query_stats</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 stagger-children">
+                <!-- Service 1 -->
+                <div class="bg-surface-container-lowest rounded-2xl p-10 border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up card-inner-glow">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+                    </div>
                     <h3 class="font-headline text-xl font-bold text-on-surface mb-4">IT Consulting Services USA</h3>
-                    <p class="text-secondary text-sm mb-6">Expert IT consulting services to optimize technology strategy, digital infrastructure, cloud systems, and business transformation for long-term growth.</p>
-                    <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline"
-                        routerLink="/services">Learn More <span
-                            class="material-symbols-outlined text-xs">arrow_forward</span></a>
+                    <p class="text-secondary text-sm mb-6 leading-relaxed">Expert IT consulting services to optimize technology strategy, digital infrastructure, cloud systems, and business transformation for long-term growth.</p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 animated-underline w-fit group" routerLink="/services">
+                        Learn More <span class="material-symbols-outlined text-xs transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    </a>
                 </div>
-                <!-- Service 2: AI Solutions -->
-                <div
-                    class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 block">psychology</span>
+                <!-- Service 2 -->
+                <div class="bg-surface-container-lowest rounded-2xl p-10 border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up card-inner-glow">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+                    </div>
                     <h3 class="font-headline text-xl font-bold text-on-surface mb-4">AI Development Services USA</h3>
-                    <p class="text-secondary text-sm mb-6">Custom AI solutions including business automation, AI chatbots, predictive analytics, machine learning, and intelligent decision systems.</p>
-                    <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline"
-                        routerLink="/services">Learn More <span
-                            class="material-symbols-outlined text-xs">arrow_forward</span></a>
+                    <p class="text-secondary text-sm mb-6 leading-relaxed">Custom AI solutions including business automation, AI chatbots, predictive analytics, machine learning, and intelligent decision systems.</p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 animated-underline w-fit group" routerLink="/services">
+                        Learn More <span class="material-symbols-outlined text-xs transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    </a>
                 </div>
-                <!-- Service 3: Web Development -->
-                <div
-                    class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 block">code</span>
+                <!-- Service 3 -->
+                <div class="bg-surface-container-lowest rounded-2xl p-10 border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up card-inner-glow">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">code</span>
+                    </div>
                     <h3 class="font-headline text-xl font-bold text-on-surface mb-4">Web Development Company USA</h3>
-                    <p class="text-secondary text-sm mb-6">Custom website development, SaaS platforms, admin dashboards, portals, and scalable web applications built for speed, SEO, and performance.</p>
-                    <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline"
-                        routerLink="/services">Learn More <span
-                            class="material-symbols-outlined text-xs">arrow_forward</span></a>
+                    <p class="text-secondary text-sm mb-6 leading-relaxed">Custom website development, SaaS platforms, admin dashboards, portals, and scalable web applications built for speed, SEO, and performance.</p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 animated-underline w-fit group" routerLink="/services">
+                        Learn More <span class="material-symbols-outlined text-xs transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    </a>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Service 4: Mobile App Development -->
-                <div
-                    class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 block">smartphone</span>
+                <!-- Service 4 -->
+                <div class="bg-surface-container-lowest rounded-2xl p-10 border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up delay-400 card-inner-glow">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">smartphone</span>
+                    </div>
                     <h3 class="font-headline text-xl font-bold text-on-surface mb-4">Mobile App Development USA</h3>
-                    <p class="text-secondary text-sm mb-6">iOS, Android, Flutter, and cross-platform mobile app development focused on user experience, performance, and business growth.</p>
-                    <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline"
-                        routerLink="/services">Learn More <span
-                            class="material-symbols-outlined text-xs">arrow_forward</span></a>
+                    <p class="text-secondary text-sm mb-6 leading-relaxed">iOS, Android, Flutter, and cross-platform mobile app development focused on user experience, performance, and business growth.</p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 animated-underline w-fit group" routerLink="/services">
+                        Learn More <span class="material-symbols-outlined text-xs transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    </a>
                 </div>
-                <!-- Service 5: E-commerce Solutions -->
-                <div
-                    class="bg-surface-container-lowest rounded-xl p-10 hover:shadow-md transition-all duration-300 border border-outline-variant/10">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 block">shopping_bag</span>
+                <!-- Service 5 -->
+                <div class="bg-surface-container-lowest rounded-2xl p-10 border border-outline-variant/10 card-3d gradient-border-card card-accent corner-bracket animate-fade-in-up delay-500 card-inner-glow">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+                    </div>
                     <h3 class="font-headline text-xl font-bold text-on-surface mb-4">Ecommerce Development Company USA</h3>
-                    <p class="text-secondary text-sm mb-6">Shopify, WooCommerce, custom online stores, marketplaces, product catalogs, and order management systems built to scale sales.</p>
-                    <a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline"
-                        routerLink="/services">Learn More <span
-                            class="material-symbols-outlined text-xs">arrow_forward</span></a>
+                    <p class="text-secondary text-sm mb-6 leading-relaxed">Shopify, WooCommerce, custom online stores, marketplaces, product catalogs, and order management systems built to scale sales.</p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 animated-underline w-fit group" routerLink="/services">
+                        Learn More <span class="material-symbols-outlined text-xs transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Animated divider -->
+    <div class="divider-flow"></div>
+
     <!-- Why Choose Us -->
-    <section class="py-24 bg-surface overflow-hidden">
-        <div class="max-w-7xl mx-auto px-8">
+    <section class="py-28 bg-surface overflow-hidden relative">
+        <div class="absolute inset-0 bg-mesh pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div class="relative">
-                    <div class="w-full aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden shadow-xl">
-                        <img alt="Smart Solutions team collaborating" class="w-full h-full object-cover"
+                <div class="relative animate-fade-in-left">
+                    <div class="w-full aspect-[4/5] rounded-2xl overflow-hidden image-glow" style="transform: perspective(900px) rotateY(6deg) rotateX(-3deg);">
+                        <img alt="Smart Solutions team collaborating" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0fcSfcdSpxJHnWW2D4qsZyfjAmZUUuh_QXb1ujYjgwTKMM20ncOVtf5RWwCArxn5c0sE62uEP8-dojccVDzj3R9HCx3KslEonMJy4bQY3nqy9YFRWys2JGhNK0ZbORTp45jaKzNlW0FUg49i6Qop_Kq8kghg9_6D2061NnkUYP_E7OCKKjwDFpXp5mt71rVJqzdDm3BusM7saCqI3xqjS6eT0NKmd8tMrGO59zjIwWILlG6RWDDQtCO1Mk7CnLSIT15b0BctP7G16" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-800/30 via-transparent to-transparent"></div>
                     </div>
-                    <div
-                        class="absolute -right-12 top-1/4 bg-primary p-8 rounded-2xl hidden md:block max-w-[280px] shadow-2xl">
+                    <!-- Floating badge -->
+                    <div class="absolute -right-10 top-1/4 bg-primary p-8 rounded-2xl hidden md:block max-w-[280px] shadow-2xl animate-float-delay card-3d" style="box-shadow: 0 20px 60px rgba(82,113,138,0.4);">
                         <h4 class="text-on-primary font-headline text-3xl font-bold mb-2">Trusted by Startups & Enterprises</h4>
                         <p class="text-primary-fixed-dim text-sm font-body">Empowering businesses across the USA and globally with AI-driven, scalable, and future-ready digital solutions.</p>
                     </div>
+                    <!-- Decorative spinning rings -->
+                    <div class="absolute -bottom-10 -left-10 w-36 h-36 glow-ring animate-spin-slow pointer-events-none"></div>
+                    <div class="absolute -bottom-5 -left-5 w-22 h-22 glow-ring animate-spin-slow-rev pointer-events-none" style="width:5.5rem; height:5.5rem;"></div>
+                    <!-- Sparkles -->
+                    <div class="absolute top-8 left-8 w-2 h-2 bg-primary/50 sparkle pointer-events-none" style="border-radius:9999px; animation-delay:0.5s;"></div>
+                    <div class="absolute bottom-16 right-12 w-1.5 h-1.5 bg-primary-fixed-dim/70 sparkle pointer-events-none" style="border-radius:9999px; animation-delay:1.5s;"></div>
                 </div>
-                <div>
-                    <span class="text-primary font-bold font-label uppercase tracking-widest text-[10px] mb-4 block">The
-                        Advantage</span>
-                    <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-8 leading-tight">Why Businesses Choose Smart Solutions</h2>
-                    <div class="space-y-10">
-                        <div class="flex gap-6">
-                            <div
-                                class="bg-primary-fixed text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1;">handshake</span>
+                <div class="animate-fade-in-right">
+                    <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 inline-block">The Advantage</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-10 leading-tight heading-gradient animate-fade-in-up delay-100">Why Businesses Choose Smart Solutions</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group animate-fade-in-up delay-200">
+                            <div class="w-12 h-12 rounded-2xl icon-gradient-bg flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:border-transparent group-hover:shadow-lg">
+                                <span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors" style="font-variation-settings: 'FILL' 1;">handshake</span>
                             </div>
                             <div>
-                                <h4 class="font-headline text-lg font-bold text-on-surface mb-2">End-to-End Software & Digital Expertise
-                                </h4>
+                                <h4 class="font-headline text-lg font-bold text-on-surface mb-2">End-to-End Software & Digital Expertise</h4>
                                 <p class="text-secondary text-sm leading-relaxed">From strategy, UI/UX, development, deployment, and optimization, we deliver complete AI, software, web, mobile, and ecommerce solutions tailored to business goals.</p>
                             </div>
                         </div>
-                        <div class="flex gap-6">
-                            <div
-                                class="bg-primary-fixed text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                        <div class="flex gap-6 group animate-fade-in-up delay-300">
+                            <div class="w-12 h-12 rounded-2xl icon-gradient-bg flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:border-transparent group-hover:shadow-lg">
+                                <span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
                             </div>
                             <div>
-                                <h4 class="font-headline text-lg font-bold text-on-surface mb-2">AI-First Innovation for Faster Growth
-                                </h4>
-                                <p class="text-secondary text-sm leading-relaxed">We leverage custom AI development, business automation, and intelligent systems to reduce costs, save time, and improve decision-making.
-                                </p>
+                                <h4 class="font-headline text-lg font-bold text-on-surface mb-2">AI-First Innovation for Faster Growth</h4>
+                                <p class="text-secondary text-sm leading-relaxed">We leverage custom AI development, business automation, and intelligent systems to reduce costs, save time, and improve decision-making.</p>
                             </div>
                         </div>
-                        <div class="flex gap-6">
-                            <div
-                                class="bg-primary-fixed text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1;">layers</span>
+                        <div class="flex gap-6 group animate-fade-in-up delay-400">
+                            <div class="w-12 h-12 rounded-2xl icon-gradient-bg flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:border-transparent group-hover:shadow-lg">
+                                <span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors" style="font-variation-settings: 'FILL' 1;">layers</span>
                             </div>
                             <div>
-                                <h4 class="font-headline text-lg font-bold text-on-surface mb-2">Scalable Technology Architecture
-                                </h4>
-                                <p class="text-secondary text-sm leading-relaxed">Our secure and scalable systems are built to automate workflows, support business expansion, and deliver long-term performance.
-                                </p>
+                                <h4 class="font-headline text-lg font-bold text-on-surface mb-2">Scalable Technology Architecture</h4>
+                                <p class="text-secondary text-sm leading-relaxed">Our secure and scalable systems are built to automate workflows, support business expansion, and deliver long-term performance.</p>
                             </div>
                         </div>
                     </div>
@@ -178,44 +223,69 @@
             </div>
         </div>
     </section>
+
+    <!-- Animated divider -->
+    <div class="divider-flow"></div>
+
     <!-- Mission & Vision -->
-    <section class="py-24 bg-surface-container-low border-y border-outline-variant/10">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-white p-12 rounded-3xl shadow-sm">
+    <section class="py-28 bg-surface-container-low relative overflow-hidden">
+        <div class="absolute top-0 right-1/3 w-80 h-80 orb orb-accent opacity-30 pointer-events-none" style="filter:blur(60px); animation-delay:-5s;"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 orb orb-primary opacity-20 pointer-events-none" style="filter:blur(55px);"></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <span class="gradient-badge px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 inline-block">Our Purpose</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight heading-gradient">Mission &amp; Vision</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="glass-enhanced p-12 rounded-3xl card-3d gradient-border-card card-accent corner-bracket animate-fade-in-left">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+                    </div>
                     <h3 class="font-headline text-2xl font-bold text-primary mb-6">Our Mission</h3>
                     <p class="text-secondary text-lg leading-relaxed">To empower startups, small businesses, and enterprises with intelligent AI solutions, scalable software development, and future-ready digital transformation services that drive growth, efficiency, and innovation across the USA and globally.</p>
                 </div>
-                <div class="bg-white p-12 rounded-3xl shadow-sm">
+                <div class="glass-enhanced p-12 rounded-3xl card-3d gradient-border-card card-accent corner-bracket animate-fade-in-right">
+                    <div class="w-14 h-14 rounded-2xl icon-gradient-bg flex items-center justify-center mb-6 transition-all duration-300 hover:scale-110">
+                        <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">visibility</span>
+                    </div>
                     <h3 class="font-headline text-2xl font-bold text-primary mb-6">Our Vision</h3>
                     <p class="text-secondary text-lg leading-relaxed">To become a leading AI development company and trusted technology partner for businesses operating in the fast-growing digital, ecommerce, and AI-powered economy.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- CTA Section -->
-    <section class="py-24 bg-surface">
-        <div class="max-w-7xl mx-auto px-8">
+    <section class="py-28 bg-surface relative overflow-hidden">
+        <div class="absolute inset-0 hero-gradient-bg"></div>
+        <div class="absolute inset-0 grid-lines opacity-50 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
             <div
-                class="editorial-gradient rounded-[2rem] p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
-                <div class="z-10 text-center md:text-left max-w-xl">
+                class="editorial-gradient animate-gradient rounded-3xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12"
+                style="background-size: 200% 200%; box-shadow: 0 30px 80px rgba(82,113,138,0.35), 0 0 0 1px rgba(82,113,138,0.2);">
+                <!-- Orbs inside CTA -->
+                <div class="absolute top-0 left-0 w-80 h-80 bg-white/6 orb pointer-events-none" style="filter:blur(45px); animation:morph-blob 9s ease-in-out infinite;"></div>
+                <div class="absolute bottom-0 right-1/3 w-64 h-64 bg-white/5 orb pointer-events-none" style="filter:blur(35px); animation:morph-blob 13s ease-in-out infinite reverse;"></div>
+                <!-- Sparkles inside CTA -->
+                <div class="absolute top-8 right-1/4 w-2 h-2 bg-white/50 sparkle pointer-events-none" style="border-radius:9999px;"></div>
+                <div class="absolute bottom-10 left-1/4 w-1.5 h-1.5 bg-white/40 sparkle pointer-events-none" style="border-radius:9999px; animation-delay:1.2s;"></div>
+
+                <div class="z-10 text-center md:text-left max-w-xl animate-fade-in-left">
                     <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-on-primary tracking-tighter mb-6">
                         Ready to Grow Your Business with AI & Technology?</h2>
                     <p class="text-primary-fixed-dim text-lg mb-0 font-body">Get a free expert consultation, strategy roadmap, and custom solution plan for your next AI, Software, Web, Mobile, or E-commerce project.</p>
                 </div>
-                <div class="z-10 flex flex-col items-center gap-4">
+                <div class="z-10 flex flex-col items-center gap-4 animate-fade-in-right">
                     <button
-                        class="bg-surface-container-lowest text-primary px-10 py-5 rounded-full font-headline font-extrabold text-lg tracking-tight hover:shadow-2xl transition-all hover:-translate-y-1"
+                        class="bg-surface-container-lowest text-primary px-10 py-5 rounded-full font-headline font-extrabold text-lg tracking-tight transition-all btn-glow beam-effect cta-button"
                         routerLink="/contact">
                         Get a Quote
                     </button>
-                    <p class="text-on-primary/60 text-xs font-label uppercase tracking-widest">Rapid Response: Within 4
-                        hours</p>
+                    <p class="text-on-primary/60 text-xs font-label uppercase tracking-widest">Rapid Response: Within 4 hours</p>
                 </div>
-                <!-- Decorative Element -->
-                <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
-                    <span class="material-symbols-outlined text-[300px] absolute -right-20 -top-20"
-                        style="font-variation-settings: 'wght' 100;">settings_suggest</span>
+                <!-- Decorative icon -->
+                <div class="absolute top-0 right-0 w-1/2 h-full opacity-8 pointer-events-none">
+                    <span class="material-symbols-outlined text-[300px] absolute -right-20 -top-20 animate-spin-slow" style="font-variation-settings: 'wght' 100; animation-duration:60s;">settings_suggest</span>
                 </div>
             </div>
         </div>

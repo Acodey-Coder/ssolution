@@ -1,39 +1,37 @@
-<footer class="bg-slate-50 dark:bg-slate-900 w-full py-16">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto items-start">
+<footer class="w-full py-16 relative overflow-hidden section-gradient-alt">
+    <!-- Gradient top border (flowing) -->
+    <div class="absolute top-0 left-0 right-0 divider-flow"></div>
+    <!-- Subtle decorative orbs -->
+    <div class="absolute bottom-0 right-0 w-96 h-96 orb orb-accent opacity-15 pointer-events-none" style="filter:blur(70px); animation-duration:16s;"></div>
+    <div class="absolute top-0 left-1/4 w-64 h-64 orb orb-primary opacity-10 pointer-events-none" style="filter:blur(55px);"></div>
+    <!-- Dot grid -->
+    <div class="absolute inset-0 dot-grid opacity-20 pointer-events-none"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto items-start relative z-10">
         <div class="md:col-span-1 flex flex-col">
-            <div class="cursor-pointer mb-4 -mt-2 flex items-start" routerLink="/">
+            <div class="cursor-pointer mb-4 -mt-2 flex items-start transition-all duration-300 hover:scale-105 hover:drop-shadow-lg" routerLink="/">
                 <img alt="Smart Solutions" class="h-24 md:h-32 w-auto object-contain object-left-top" src="logo.png" />
             </div>
         </div>
         <div class="flex flex-col gap-4">
-            <h4 class="text-slate-900 dark:text-blue-400 font-medium font-inter text-sm uppercase tracking-widest">
-                Services</h4>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/services">IT Consulting</a>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/services">AI Solutions</a>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/services">Web &amp; Mobile Apps</a>
+            <h4 class="text-on-surface font-bold font-inter text-xs uppercase tracking-[0.15em] mb-1 stat-gradient">Services</h4>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit hover:translate-x-1" routerLink="/services">IT Consulting</a>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit hover:translate-x-1" routerLink="/services">AI Solutions</a>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit hover:translate-x-1" routerLink="/services">Web &amp; Mobile Apps</a>
         </div>
         <div class="flex flex-col gap-4">
-            <h4 class="text-slate-900 dark:text-blue-400 font-medium font-inter text-sm uppercase tracking-widest">
-                Company</h4>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/about">About Us</a>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/services">Services</a>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/contact">Contact Us</a>
+            <h4 class="text-on-surface font-bold font-inter text-xs uppercase tracking-[0.15em] mb-1 stat-gradient">Company</h4>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit hover:translate-x-1" routerLink="/about">About Us</a>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit hover:translate-x-1" routerLink="/services">Services</a>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit hover:translate-x-1" routerLink="/contact">Contact Us</a>
         </div>
         <div class="flex flex-col gap-4">
-            <h4 class="text-slate-900 dark:text-blue-400 font-medium font-inter text-sm uppercase tracking-widest">
-                Contact</h4>
-            <div class="font-inter text-sm text-slate-500 dark:text-slate-400">Piscataway, NJ 08854, United States</div>
-            <a class="font-inter text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-all duration-200"
-                routerLink="/contact">contact@smartsolco.ai</a>
+            <h4 class="text-on-surface font-bold font-inter text-xs uppercase tracking-[0.15em] mb-1 stat-gradient">Contact</h4>
+            <div class="font-inter text-sm text-slate-500">Piscataway, NJ 08854, United States</div>
+            <a class="font-inter text-sm text-slate-500 hover:text-primary transition-all duration-300 animated-underline w-fit" routerLink="/contact">contact@smartsolco.ai</a>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200/50 dark:border-slate-800/50">
+    <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200/50 relative z-10">
         <p class="font-inter text-xs text-slate-400 text-center">© 2024 Smart Solutions. All rights reserved.</p>
     </div>
 </footer>
