@@ -1,8 +1,10 @@
-<main class="pt-20">
+<main class="pt-24">
     <!-- Hero Section -->
-    <section class="relative min-h-[900px] flex items-center overflow-hidden bg-surface hero-gradient-bg">
+    <section class="relative min-h-[900px] flex items-center overflow-hidden ai-hero-dark">
         <!-- Grid lines -->
         <div class="absolute inset-0 grid-lines opacity-100 pointer-events-none"></div>
+        <!-- AI scan line -->
+        <div class="absolute inset-x-0 ai-scan-line pointer-events-none"></div>
         <!-- Animated morphing orbs -->
         <div class="absolute -top-16 -left-24 w-[500px] h-[500px] orb orb-primary pointer-events-none" style="animation-duration: 14s; filter: blur(70px);"></div>
         <div class="absolute -bottom-32 -right-16 w-[600px] h-[600px] orb orb-accent pointer-events-none" style="animation: morph-blob 18s ease-in-out infinite reverse; filter: blur(80px); opacity:0.5;"></div>
@@ -47,12 +49,12 @@
                         <span class="font-headline text-2xl font-extrabold stat-gradient">99.9%</span>
                         <span class="text-xs text-secondary uppercase tracking-widest">Uptime</span>
                     </div>
-                    <div class="w-px h-10 bg-outline-variant/30"></div>
+                    <div class="w-px h-10 bg-white/15"></div>
                     <div class="flex flex-col">
                         <span class="font-headline text-2xl font-extrabold stat-gradient">&lt;100ms</span>
                         <span class="text-xs text-secondary uppercase tracking-widest">Latency</span>
                     </div>
-                    <div class="w-px h-10 bg-outline-variant/30"></div>
+                    <div class="w-px h-10 bg-white/15"></div>
                     <div class="flex flex-col">
                         <span class="font-headline text-2xl font-extrabold stat-gradient">50+</span>
                         <span class="text-xs text-secondary uppercase tracking-widest">Projects</span>

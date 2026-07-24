@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-23T22:13:14.849Z",
+    "repoRoot": "C:\\Users\\MuhammadAnasYousuf\\Downloads\\SSolution-24-7\\ssolution",
+    "tool": "ai-sop-codemap-tool",
+    "languages": {
+      "JavaScript": 1,
+      "TypeScript": 19
+    },
+    "primaryLanguage": "TypeScript",
+    "dbType": "Unknown",
+    "dbEvidence": [],
+    "fileCount": 82,
+    "parsedFileCount": 20,
+    "durationMs": 26
+  },
+  "modules": {
+    "ssolution": {
+      "projects": [],
+      "fileCount": 20,
+      "files": [
+        "tailwind.config.js",
+        "src/main.ts",
+        "src/app/app.config.ts",
+        "src/app/app.routes.ts",
+        "src/app/app.spec.ts",
+        "src/app/app.ts",
+        "src/app/pages/services/services.spec.ts",
+        "src/app/pages/services/services.ts",
+        "src/app/pages/portfolio/portfolio.spec.ts",
+        "src/app/pages/portfolio/portfolio.ts",
+        "src/app/pages/home/home.spec.ts",
+        "src/app/pages/home/home.ts",
+        "src/app/pages/contact/contact.spec.ts",
+        "src/app/pages/contact/contact.ts",
+        "src/app/pages/about/about.spec.ts",
+        "src/app/pages/about/about.ts",
+        "src/app/components/top-nav/top-nav.spec.ts",
+        "src/app/components/top-nav/top-nav.ts",
+        "src/app/components/footer/footer.spec.ts",
+        "src/app/components/footer/footer.ts"
+      ],
+      "dependsOn": []
+    }
+  },
+  "files": {
+    "tailwind.config.js": {
+      "module": "ssolution",
+      "language": "JavaScript",
+      "contentHash": "e71dcaa3b079693e223769ced5e77439098ccaaf",
+      "imports": [
+        "@tailwindcss/forms",
+        "@tailwindcss/container-queries"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/main.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "728ba59250941e1b951d30f5f8811d9f50451d71",
+      "imports": [
+        "@angular/platform-browser",
+        "./app/app.config",
+        "./app/app"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/app.config.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "bcce5c373e604fb0f0e985e2c7a546e183d15495",
+      "imports": [
+        "@angular/core",
+        "@angular/router",
+        "./app.routes"
+      ],
+      "exports": [
+        "appConfig"
+      ],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/app.routes.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "b62145ba7d98a6d6c7781d66305917fb6448a434",
+      "imports": [
+        "@angular/router",
+        "./pages/home/home",
+        "./pages/about/about",
+        "./pages/services/services",
+        "./pages/contact/contact",
+        "./pages/portfolio/portfolio"
+      ],
+      "exports": [
+        "routes"
+      ],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/app.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "b748e9d90a6c0a1394352bceb9d508d3827c1091",
+      "imports": [
+        "@angular/core/testing",
+        "./app"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/app.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "9ad6c62a9b09be9f2b8db6b54733c818defa9013",
+      "imports": [
+        "@angular/core",
+        "@angular/router",
+        "./components/top-nav/top-nav",
+        "./components/footer/footer"
+      ],
+      "exports": [
+        "App"
+      ],
+      "classes": [
+        "App"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/services/services.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "485208d92c98ec14a4718a349be984a11162e161",
+      "imports": [
+        "@angular/core/testing",
+        "./services"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/services/services.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "23a625f9b5228f37133ce9806f704b8eb62a47f3",
+      "imports": [
+        "@angular/core",
+        "@angular/router"
+      ],
+      "exports": [
+        "Services"
+      ],
+      "classes": [
+        "Services"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/portfolio/portfolio.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "84174f8c90a15582e6db3a717068b78a460f1240",
+      "imports": [
+        "@angular/core/testing",
+        "./portfolio"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/portfolio/portfolio.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "2a7b27efd1225331f99d51c8271b8f532f62d960",
+      "imports": [
+        "@angular/core",
+        "@angular/router"
+      ],
+      "exports": [
+        "Portfolio"
+      ],
+      "classes": [
+        "Portfolio"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/home/home.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "16c6784eda7d97f35ca62a4da3f80fe0e0a9be38",
+      "imports": [
+        "@angular/core/testing",
+        "./home"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/home/home.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "149b53232b5dcd7e12ee9704bb2aaf62a8706439",
+      "imports": [
+        "@angular/core",
+        "@angular/router"
+      ],
+      "exports": [
+        "Home"
+      ],
+      "classes": [
+        "Home"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/contact/contact.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "c7d00bfc652bba408ac9afb3c43ace9173214e06",
+      "imports": [
+        "@angular/core/testing",
+        "./contact"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/contact/contact.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "964b10c0a938788aa5b18c80f2d9175b218c1ea5",
+      "imports": [
+        "@angular/core",
+        "@angular/router"
+      ],
+      "exports": [
+        "Contact"
+      ],
+      "classes": [
+        "Contact"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/about/about.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "14ed94c12d1612a5781cae78504ccd75aa50ea64",
+      "imports": [
+        "@angular/core/testing",
+        "./about"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/pages/about/about.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "4665d59b7bfb0687d5002bd58e055e4dd8db9c6a",
+      "imports": [
+        "@angular/core",
+        "@angular/router"
+      ],
+      "exports": [
+        "About"
+      ],
+      "classes": [
+        "About"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/components/top-nav/top-nav.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "4a048f2cda34fd3696267cd2b83a4a33d017040c",
+      "imports": [
+        "@angular/core/testing",
+        "./top-nav"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/components/top-nav/top-nav.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "33e88a3660fd87dc3808350709e7f33ac5d05cac",
+      "imports": [
+        "@angular/core",
+        "@angular/router",
+        "@angular/common"
+      ],
+      "exports": [
+        "TopNav"
+      ],
+      "classes": [
+        "TopNav"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/components/footer/footer.spec.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "d45e53bda2b964b0e1e23f432c29e71bee5ebb78",
+      "imports": [
+        "@angular/core/testing",
+        "./footer"
+      ],
+      "exports": [],
+      "classes": [],
+      "functions": [],
+      "mongooseSchemas": []
+    },
+    "src/app/components/footer/footer.ts": {
+      "module": "ssolution",
+      "language": "TypeScript",
+      "contentHash": "48362a8535d9c46ae683630010a89912dc002b81",
+      "imports": [
+        "@angular/core",
+        "@angular/router"
+      ],
+      "exports": [
+        "Footer"
+      ],
+      "classes": [
+        "Footer"
+      ],
+      "functions": [],
+      "mongooseSchemas": []
+    }
+  },
+  "importGraph": {
+    "tailwind.config.js": {
+      "imports": [],
+      "importedBy": []
+    },
+    "src/main.ts": {
+      "imports": [
+        "src/app/app.config.ts",
+        "src/app/app.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/app.config.ts": {
+      "imports": [
+        "src/app/app.routes.ts"
+      ],
+      "importedBy": [
+        "src/main.ts"
+      ]
+    },
+    "src/app/app.ts": {
+      "imports": [
+        "src/app/components/top-nav/top-nav.ts",
+        "src/app/components/footer/footer.ts"
+      ],
+      "importedBy": [
+        "src/main.ts",
+        "src/app/app.spec.ts"
+      ]
+    },
+    "src/app/app.routes.ts": {
+      "imports": [
+        "src/app/pages/home/home.ts",
+        "src/app/pages/about/about.ts",
+        "src/app/pages/services/services.ts",
+        "src/app/pages/contact/contact.ts",
+        "src/app/pages/portfolio/portfolio.ts"
+      ],
+      "importedBy": [
+        "src/app/app.config.ts"
+      ]
+    },
+    "src/app/pages/home/home.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.routes.ts",
+        "src/app/pages/home/home.spec.ts"
+      ]
+    },
+    "src/app/pages/about/about.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.routes.ts",
+        "src/app/pages/about/about.spec.ts"
+      ]
+    },
+    "src/app/pages/services/services.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.routes.ts",
+        "src/app/pages/services/services.spec.ts"
+      ]
+    },
+    "src/app/pages/contact/contact.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.routes.ts",
+        "src/app/pages/contact/contact.spec.ts"
+      ]
+    },
+    "src/app/pages/portfolio/portfolio.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.routes.ts",
+        "src/app/pages/portfolio/portfolio.spec.ts"
+      ]
+    },
+    "src/app/app.spec.ts": {
+      "imports": [
+        "src/app/app.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/components/top-nav/top-nav.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.ts",
+        "src/app/components/top-nav/top-nav.spec.ts"
+      ]
+    },
+    "src/app/components/footer/footer.ts": {
+      "imports": [],
+      "importedBy": [
+        "src/app/app.ts",
+        "src/app/components/footer/footer.spec.ts"
+      ]
+    },
+    "src/app/pages/services/services.spec.ts": {
+      "imports": [
+        "src/app/pages/services/services.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/pages/portfolio/portfolio.spec.ts": {
+      "imports": [
+        "src/app/pages/portfolio/portfolio.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/pages/home/home.spec.ts": {
+      "imports": [
+        "src/app/pages/home/home.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/pages/contact/contact.spec.ts": {
+      "imports": [
+        "src/app/pages/contact/contact.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/pages/about/about.spec.ts": {
+      "imports": [
+        "src/app/pages/about/about.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/components/top-nav/top-nav.spec.ts": {
+      "imports": [
+        "src/app/components/top-nav/top-nav.ts"
+      ],
+      "importedBy": []
+    },
+    "src/app/components/footer/footer.spec.ts": {
+      "imports": [
+        "src/app/components/footer/footer.ts"
+      ],
+      "importedBy": []
+    }
+  }
+}

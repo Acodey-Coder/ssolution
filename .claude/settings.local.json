@@ -1,7 +1,28 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Read(//c/Users/MuhammadAnasYousuf/Downloads/SSolution-24-7/**)",
+      "Read(//c/Users/MuhammadAnasYousuf/Downloads/SSolution-24-7/Ai_sops/**)",
+      "Bash(cp *)",
+      "Bash(git -C \"/c/Users/MuhammadAnasYousuf/Downloads/SSolution-24-7/ssolution\" remote -v)",
+      "Bash(node ai-sop/codemap-tool/bin/cli.js generate .)",
+      "Bash(node ai-sop/codemap-tool/bin/cli.js query logo)",
+      "Bash(npm start *)",
+      "Bash(npm install *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4200/)",
+      "Bash(netstat -ano)",
+      "Bash(npx ng *)",
+      "Bash(node ai-sop/codemap-tool/bin/cli.js refresh .)",
+      "Bash(node -e ' *)",
+      "Bash(command -v magick)",
+      "Bash(command -v convert)",
+      "Bash(command -v python)",
+      "Bash(python -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(grep -iE \"^sharp$|^jimp$|^pngjs$\")",
+      "Bash(python -m pip --version)",
+      "Bash(python -m pip install --quiet Pillow)",
+      "Bash(node *)"
     ]
   }
 }

@@ -2,10 +2,12 @@
     <!-- Animated gradient bottom border -->
     <div class="absolute bottom-0 left-0 right-0 h-px" style="background: linear-gradient(90deg, transparent, rgba(82,113,138,0.3), rgba(154,203,255,0.4), rgba(82,113,138,0.3), transparent);"></div>
 
-    <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center h-24 px-4 md:px-8 max-w-7xl mx-auto">
         <div class="flex items-center gap-3">
-            <img alt="Smart Solutions Logo" class="h-12 md:h-16 lg:h-20 w-auto object-contain cursor-pointer transition-all duration-300 hover:scale-105 hover:drop-shadow-lg" src="logo.png"
-                routerLink="/" (click)="closeMenu()" />
+            <span class="logo-energy-wrap inline-flex">
+                <img alt="Smart Solutions Logo" class="h-11 md:h-16 lg:h-20 w-auto object-contain cursor-pointer hover:drop-shadow-lg logo-electric logo-3d" src="logo-nav.png"
+                    routerLink="/" (click)="closeMenu()" />
+            </span>
         </div>
 
         <!-- Desktop Navigation -->
@@ -80,7 +82,9 @@
         <!-- Mobile Menu Header -->
         <div class="flex justify-between items-center h-24 px-6 border-b border-slate-100 dark:border-slate-800">
             <div class="flex items-center gap-3">
-                <img alt="Smart Solutions Logo" class="h-12 w-auto object-contain" src="logo.png" />
+                <span class="logo-energy-wrap inline-flex">
+                    <img alt="Smart Solutions Logo" class="h-12 w-auto object-contain logo-electric logo-3d" src="logo-nav.png" />
+                </span>
             </div>
             <button (click)="closeMenu()" class="p-3 text-slate-600 dark:text-slate-300 focus:outline-none" aria-label="Close menu">
                 <span class="material-symbols-outlined text-5xl">close</span>

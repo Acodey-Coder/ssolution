@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-23T22:13:14.849Z",
+    "repoRoot": "C:\\Users\\MuhammadAnasYousuf\\Downloads\\SSolution-24-7\\ssolution",
+    "tool": "ai-sop-codemap-tool",
+    "languages": {
+      "JavaScript": 1,
+      "TypeScript": 19
+    },
+    "primaryLanguage": "TypeScript",
+    "dbType": "Unknown",
+    "dbEvidence": [],
+    "fileCount": 82,
+    "parsedFileCount": 20,
+    "durationMs": 26
+  },
+  "tables": {},
+  "procedures": {}
+}

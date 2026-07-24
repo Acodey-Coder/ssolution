@@ -236,6 +236,76 @@
     #f8faff;
 }
 
+/* AI-themed dark hero (shared across all page heroes) */
+.ai-hero-dark {
+  background:
+    radial-gradient(circle at 18% 25%, rgba(56, 189, 248, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 82% 20%, rgba(94, 234, 212, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 55% 90%, rgba(56, 189, 248, 0.08) 0%, transparent 55%),
+    linear-gradient(160deg, #050914 0%, #0a1224 45%, #0d1b2e 100%);
+}
+
+.ai-hero-dark .grid-lines {
+  background-image:
+    linear-gradient(rgba(94, 197, 255, 0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 197, 255, 0.10) 1px, transparent 1px);
+}
+
+.ai-hero-dark .dot-grid {
+  background-image: radial-gradient(circle, rgba(94, 197, 255, 0.22) 1px, transparent 1px);
+}
+
+.ai-hero-dark .text-on-surface,
+.ai-hero-dark .text-on-surface-variant {
+  color: #eef4ff;
+}
+.ai-hero-dark .text-secondary {
+  color: #9fb0c9;
+}
+.ai-hero-dark .text-primary {
+  color: #5fd4ff;
+}
+
+.ai-hero-dark h1 {
+  text-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+}
+
+.ai-hero-dark .gradient-badge {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16) 0%, rgba(94, 234, 212, 0.14) 100%);
+  border-color: rgba(94, 197, 255, 0.35);
+  color: #7dd8ff;
+}
+
+.ai-hero-dark .btn-outline-glow {
+  border-color: rgba(94, 197, 255, 0.45);
+}
+.ai-hero-dark .btn-outline-glow:hover {
+  border-color: rgba(94, 197, 255, 0.85);
+  background: rgba(56, 189, 248, 0.08);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.25), inset 0 0 15px rgba(56, 189, 248, 0.08);
+}
+
+/* Scanning beam sweep across AI dark heroes */
+.ai-scan-line {
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(94, 234, 212, 0.6), rgba(56, 189, 248, 0.6), transparent);
+  animation: ai-scan 6s linear infinite;
+}
+
+@keyframes ai-scan {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-scan-line {
+    display: none;
+  }
+}
+
 /* Tech grid lines */
 .grid-lines {
   background-image:

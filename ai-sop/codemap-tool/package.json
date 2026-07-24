@@ -1,0 +1,13 @@
+{
+  "name": "ai-sop-codemap-tool",
+  "version": "1.0.0",
+  "description": "Deterministic code + DB codemap generator for ai-sop context generation (see ../sops/sop-codemap-tool.md). Zero runtime dependencies - Node built-ins only.",
+  "bin": {
+    "codemap": "bin/cli.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
